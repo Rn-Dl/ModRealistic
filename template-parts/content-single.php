@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package Realistic
+ * @package ModRealistic
  */
 
 ?>

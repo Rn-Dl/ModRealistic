@@ -2,7 +2,7 @@
 /**
  * Template for displaying search forms.
  *
- * @package Realistic
+ * @package ModRealistic
  */
 ?>
 

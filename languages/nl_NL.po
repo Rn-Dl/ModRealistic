@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Realistic 1.0.3\n"
+"Project-Id-Version: ModRealistic 1.0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-06 03:45+0100\n"
 "PO-Revision-Date: 2015-09-06 04:00+0100\n"
@@ -170,9 +170,9 @@ msgid "Your comment is awaiting moderation."
 msgstr "Je reactie wordt beoordeeld."
 
 #: functions.php:676
-msgid "Realistic theme by <a href=\"http://themient.com\">Themient</a>"
+msgid "ModRealistic theme by <a href=\"http://themient.com\">Themient</a>"
 msgstr ""
-"\"Realistic\" thema gemaakt door <a href=\"http://themient.com\">Themient</a>"
+"\"ModRealistic\" thema gemaakt door <a href=\"http://themient.com\">Themient</a>"
 
 #: header.php:39 header.php:66
 msgid "Add Menu"
@@ -208,8 +208,8 @@ msgid "Search for:"
 msgstr "Zoeken naar:"
 
 #: functions/widget-fblikebox.php:15
-msgid "Realistic: Facebook Like Box"
-msgstr "Realistic: Facebook Like Box"
+msgid "ModRealistic: Facebook Like Box"
+msgstr "ModRealistic: Facebook Like Box"
 
 #: functions/widget-fblikebox.php:16
 msgid "Displays Facebook Like Box."
@@ -297,8 +297,8 @@ msgid "Show Border"
 msgstr "Toon rand"
 
 #: functions/widget-login.php:16
-msgid "Realistic: Login Widget"
-msgstr "Realistic: Login Widget"
+msgid "ModRealistic: Login Widget"
+msgstr "ModRealistic: Login Widget"
 
 #: functions/widget-login.php:17
 msgid "Display a login/register form on the sidebar."
@@ -390,8 +390,8 @@ msgstr ""
 "<strong>FOUT:</strong>: Ongeldige gebruikersnaam of onjuist wachtwoord."
 
 #: functions/widget-popularposts.php:15
-msgid "Realistic: Popular Posts"
-msgstr "Realistic: Populaire posts"
+msgid "ModRealistic: Popular Posts"
+msgstr "ModRealistic: Populaire posts"
 
 #: functions/widget-popularposts.php:16
 msgid "Displays most Popular Posts with Thumbnail."
@@ -430,8 +430,8 @@ msgid "Excerpt Length:"
 msgstr "Lengte van uittreksel:"
 
 #: functions/widget-recentposts.php:15
-msgid "Realistic: Recent Posts"
-msgstr "Realistic: Recente Posts"
+msgid "ModRealistic: Recent Posts"
+msgstr "ModRealistic: Recente Posts"
 
 #: functions/widget-recentposts.php:16
 msgid "Display the most recent posts from all categories."
@@ -530,8 +530,8 @@ msgid "Show social profile icons."
 msgstr "Toon social profiel iconen."
 
 #: functions/widget-socialicons.php:146
-msgid "Realistic: Social Icons"
-msgstr "Realistic: Sociale Iconen"
+msgid "ModRealistic: Social Icons"
+msgstr "ModRealistic: Sociale Iconen"
 
 #: functions/widget-socialicons.php:158
 msgid "Open links in a new tab?"

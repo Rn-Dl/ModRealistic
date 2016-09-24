@@ -2,7 +2,7 @@
 
 /*-----------------------------------------------------------------------------------
 
-	Plugin Name: Realistic Social Icons
+	Plugin Name: ModRealistic Social Icons
 	Description: This widget shows social icons in the sidebar or footer.
 	Version: 1.0
 
@@ -143,7 +143,7 @@ class realistic_social_icons_widget extends WP_Widget {
 			#'height'  => 350,
 		);
 
-		parent::__construct ( 'social-icons', __( 'Realistic: Social Icons', 'realistic' ), $widget_ops, $control_ops );
+		parent::__construct ( 'social-icons', __( 'ModRealistic: Social Icons', 'realistic' ), $widget_ops, $control_ops );
 
 	}
 

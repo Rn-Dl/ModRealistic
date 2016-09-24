@@ -1,7 +1,7 @@
 <?php
 /*-----------------------------------------------------------------------------------
 
-	Plugin Name: Realistic Recent Posts
+	Plugin Name: ModRealistic Recent Posts
 	Description: A widget that displays your recent posts.
 	Version: 1.0
 
@@ -12,7 +12,7 @@ class realistic_recent_posts_widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 	 		'realistic_recent_posts_widget',
-			__('Realistic: Recent Posts', 'realistic'),
+			__('ModRealistic: Recent Posts', 'realistic'),
 			array( 'description' => __( 'Display the most recent posts from all categories.', 'realistic' ) )
 		);
 	}

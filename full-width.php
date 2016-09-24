@@ -2,7 +2,7 @@
 	/**
 	*
  	* Template Name: Full Width
-	* @package Realistic
+	* @package ModRealistic
 	*
 	*/
 	

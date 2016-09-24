@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package Realistic
+ * @package ModRealistic
  */
 
 if ( ! is_active_sidebar( 'sidebar' ) ) {

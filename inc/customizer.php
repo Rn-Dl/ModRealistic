@@ -1,8 +1,8 @@
 <?php
 	/**
-	* Realistic Theme Customizer
+	* ModRealistic Theme Customizer
 	*
-	* @package Realistic
+	* @package ModRealistic
 	*/
 	
 /*-----------------------------------------------------------------------------------*/

@@ -1,7 +1,7 @@
 <?php
 /*-----------------------------------------------------------------------------------
 
-	Plugin Name: Realistic Login
+	Plugin Name: ModRealistic Login
 	Description: A widget that displays a login form.
 	Version: 1.0
 
@@ -13,7 +13,7 @@ class realistic_login_widget extends WP_Widget{
 	public function __construct() {
 		parent::__construct(
 	 		'realistic_login_widget',
-			__( 'Realistic: Login Widget','realistic' ),
+			__( 'ModRealistic: Login Widget','realistic' ),
 			array( 'description' => __( 'Display a login/register form on the sidebar.','realistic' ) )
 		);
 	}

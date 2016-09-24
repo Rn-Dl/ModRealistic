@@ -1,5 +1,5 @@
-# Realistic - Material Design Lite WordPress Theme
-Realistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. Realistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides Realistic is highly customizable and speed optimized.
+# ModRealistic - Material Design Lite WordPress Theme
+ModRealistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. ModRealistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides ModRealistic is highly customizable and speed optimized.
 
 ![alt tag](http://i.imgur.com/n5A80w8.jpg)
 

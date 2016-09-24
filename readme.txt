@@ -1,12 +1,12 @@
-=== Realistic ===
+=== ModRealistic ===
 Tags: Blue, Red, Purple, two-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.1
 Tested up to: 4.4.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Realistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. Realistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides Realistic is highly customizable and speed optimized.
+ModRealistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. ModRealistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides ModRealistic is highly customizable and speed optimized.
 == Description ==
-Realistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. Realistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides Realistic is highly customizable and speed optimized.
+ModRealistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. ModRealistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides ModRealistic is highly customizable and speed optimized.
 * Responsive layout (Don't thank me, thank Google!)
 * Translation Ready (French language included)
 * 6 Colors Schemes
@@ -20,17 +20,17 @@ Realistic is the first WordPress theme built using Underscores and Google's Mate
 * The GPL v2.0 or later license. :) Use it to make something cool.
 == Installation ==
 = Upload theme via WordPress (Easy) =
-Step 1 – Navigate to Appearance > Themes.
-Step 2 – Click “Add New” Click “Upload Theme”
-Step 3 – Click “Upload Theme”
-Step 4 – Click “Choose File”
-Step 5 – Navigate to “redwaves-free.zip” file on your computer and click “Install Now” button.
-Step 6 – Activate the newly installed theme.
+Step 1 ï¿½ Navigate to Appearance > Themes.
+Step 2 ï¿½ Click ï¿½Add Newï¿½ Click ï¿½Upload Themeï¿½
+Step 3 ï¿½ Click ï¿½Upload Themeï¿½
+Step 4 ï¿½ Click ï¿½Choose Fileï¿½
+Step 5 ï¿½ Navigate to ï¿½redwaves-free.zipï¿½ file on your computer and click ï¿½Install Nowï¿½ button.
+Step 6 ï¿½ Activate the newly installed theme.
 = Upload Theme via FTP (Advanced) =
-Step 1 – Log into your hosting space via an FTP software
-Step 2 – Unzip the “redwaves-free.zip” file.
-Step 3 – Upload the “redwaves-free” theme folder into wp-content > themes in your wordpress installation
-Step 4 – Activate the newly installed theme. Go to Appearance > Themes and activate the installed theme.
+Step 1 ï¿½ Log into your hosting space via an FTP software
+Step 2 ï¿½ Unzip the ï¿½redwaves-free.zipï¿½ file.
+Step 3 ï¿½ Upload the ï¿½redwaves-freeï¿½ theme folder into wp-content > themes in your wordpress installation
+Step 4 ï¿½ Activate the newly installed theme. Go to Appearance > Themes and activate the installed theme.
 == Changelog ==
 = 1.2.3 - September 14 2016 =
 * Updated MDL framework to v1.2.1.
@@ -80,8 +80,8 @@ Step 4 – Activate the newly installed theme. Go to Appearance > Themes and activ
 = 1.0.0 - July 18 2015 =
 * Initial release.
 == Resources ==
-* Underscores © 2012-2015 Automattic, Inc. http://underscores.me	 License: GPL 2.0
-* Material Design Lite (MDL) © Google, 2015. Licensed under an Apache-2 license. https://github.com/google/material-design-lite/
-* Material Icons © Google, 2015. Licensed under CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/). https://www.google.com/design/icons/
+* Underscores ï¿½ 2012-2015 Automattic, Inc. http://underscores.me	 License: GPL 2.0
+* Material Design Lite (MDL) ï¿½ Google, 2015. Licensed under an Apache-2 license. https://github.com/google/material-design-lite/
+* Material Icons ï¿½ Google, 2015. Licensed under CC BY 4.0 license (https://creativecommons.org/licenses/by/4.0/). https://www.google.com/design/icons/
 * FontAwesome	http://fontawesome.io	License: SIL OFL 1.1
 * Dutch (NL) Translation by supertanno.

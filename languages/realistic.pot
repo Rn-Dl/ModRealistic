@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Realistic 1.0.3\n"
+"Project-Id-Version: ModRealistic 1.0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-06 03:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -163,7 +163,7 @@ msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #: functions.php:676
-msgid "Realistic theme by <a href=\"http://themient.com\">Themient</a>"
+msgid "ModRealistic theme by <a href=\"http://themient.com\">Themient</a>"
 msgstr ""
 
 #: header.php:39 header.php:66
@@ -200,7 +200,7 @@ msgid "Search for:"
 msgstr ""
 
 #: functions/widget-fblikebox.php:15
-msgid "Realistic: Facebook Like Box"
+msgid "ModRealistic: Facebook Like Box"
 msgstr ""
 
 #: functions/widget-fblikebox.php:16
@@ -279,7 +279,7 @@ msgid "Show Border"
 msgstr ""
 
 #: functions/widget-login.php:16
-msgid "Realistic: Login Widget"
+msgid "ModRealistic: Login Widget"
 msgstr ""
 
 #: functions/widget-login.php:17
@@ -371,7 +371,7 @@ msgid "<strong>ERROR</strong>: Invalid username or incorrect password."
 msgstr ""
 
 #: functions/widget-popularposts.php:15
-msgid "Realistic: Popular Posts"
+msgid "ModRealistic: Popular Posts"
 msgstr ""
 
 #: functions/widget-popularposts.php:16
@@ -411,7 +411,7 @@ msgid "Excerpt Length:"
 msgstr ""
 
 #: functions/widget-recentposts.php:15
-msgid "Realistic: Recent Posts"
+msgid "ModRealistic: Recent Posts"
 msgstr ""
 
 #: functions/widget-recentposts.php:16
@@ -511,7 +511,7 @@ msgid "Show social profile icons."
 msgstr ""
 
 #: functions/widget-socialicons.php:146
-msgid "Realistic: Social Icons"
+msgid "ModRealistic: Social Icons"
 msgstr ""
 
 #: functions/widget-socialicons.php:158

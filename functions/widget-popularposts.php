@@ -1,7 +1,7 @@
 <?php
 /*-----------------------------------------------------------------------------------
 
-	Plugin Name: Realistic Popular Posts
+	Plugin Name: ModRealistic Popular Posts
 	Description: A widget that displays popular posts.
 	Version: 1.0
 
@@ -12,7 +12,7 @@ class realistic_popular_posts_widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 	 		'realistic_popular_posts_widget',
-			__('Realistic: Popular Posts','realistic'),
+			__('ModRealistic: Popular Posts','realistic'),
 			array( 'description' => __( 'Displays most Popular Posts with Thumbnail.','realistic' ) )
 		);
 	}

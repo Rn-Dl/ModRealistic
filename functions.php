@@ -1,8 +1,8 @@
 <?php
 /**
- * Realistic functions and definitions
+ * ModRealistic functions and definitions
  *
- * @package Realistic
+ * @package ModRealistic
  */
 
 	/*-----------------------------------------------------------------------------------*/
@@ -664,7 +664,7 @@
 						echo $footer_left; ?>
 					</div>
 					<div class="right">
-						<?php _e( 'Realistic theme by <a href="http://themient.com">Themient</a>', 'realistic' );?>
+						<?php _e( 'ModRealistic theme by <a href="http://themient.com">Themient</a>', 'realistic' );?>
 					</div>
 				</div>
 			<?php
