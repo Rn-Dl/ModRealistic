@@ -42,14 +42,14 @@
 				} ?>
 			</nav>
 
-			<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+			<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<div class="search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width is-upgraded">
-				<label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
-					<i class="material-icons">search</i>
-				</label>
-				<div class="search-form mdl-textfield__expandable-holder">
-					<input class="search-field  mdl-textfield__input" type="search" id="search-field" name="s" value="">
-				</div>
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="search-form mdl-textfield__expandable-holder">
+                        <input class="search-field mdl-textfield__input" type="search" id="search-field" name="s" value="">
+                    </div>
 				</div>
 			</form>
 

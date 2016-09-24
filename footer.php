@@ -8,8 +8,8 @@
  */
 
 ?>
-
 	</div>
+
 	<footer id="colophon" class="site-footer mdl-mega-footer" role="contentinfo">
 		<div class="site-info mdl-mega-footer--bottom-section">
 			<?php realistic_copyrights(); ?>

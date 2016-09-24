@@ -1,7 +1,7 @@
 === Realistic ===
 Tags: Blue, Red, Purple, two-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.1
-Tested up to: 4.4.1
+Tested up to: 4.4.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Realistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. Realistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides Realistic is highly customizable and speed optimized.
@@ -32,6 +32,13 @@ Step 2 – Unzip the “redwaves-free.zip” file.
 Step 3 – Upload the “redwaves-free” theme folder into wp-content > themes in your wordpress installation
 Step 4 – Activate the newly installed theme. Go to Appearance > Themes and activate the installed theme.
 == Changelog ==
+= 1.2.3 - September 14 2016 =
+* Updated MDL framework to v1.2.1.
+* Minor style adjustments.
+= 1.2.2 - April 04 2016 =
+* Minor style adjustments & bug fixes.
+= 1.2.1 - February 20 2016 =
+* Updated MDL to v1.1.1.
 = 1.1.7 - January 26 2016 =
 * Fixed a bug in Menu visibility.
 = 1.1.6 - January 12 2016 =

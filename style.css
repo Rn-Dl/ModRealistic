@@ -4,11 +4,11 @@
 	Author: Asmi Khalil
 	Author URI: http://themient.com
 	Description: Realistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. Realistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides Realistic is highly customizable and speed optimized.
-	Version: 1.1.7
+	Version: 1.2.3
 	License: GNU General Public License v3 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	Text Domain: realistic
-	Tags: Blue, Red, Purple, two-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments, translation-ready
+	Tags: two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments, translation-ready
 
 	This theme, like WordPress, is licensed under the GPL.
 	Use it to make something cool, have fun, and share what you've learned with others.
@@ -135,9 +135,14 @@ img {
 	top: 5px;
 	z-index: 999;
 }
+.post-actions-menu li {
+	padding: 0;
+}
 .post-actions-menu a {
 	color: rgba(0,0,0,.87);
 	text-decoration: none;
+	display: block;
+	padding: 0 16px;
 }
 .post-box .mdl-menu__container {
 	right: 20px !important;
@@ -240,6 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-title a {
 	color: #FFF;
 	text-decoration: none;
+    text-transform: uppercase;
 }
 .post-title a {
 	color: #303030;
@@ -352,7 +358,7 @@ input, textarea {
 .main-navigation li ul li:hover {
 	background: rgba(0, 0, 0, 0.24);
 }
-.main-navigation li ul li:hover a, .main-navigation li ul li a:active {
+.main-navigation .sub-menu > li:hover > a, .main-navigation .sub-menu > li > a:active {
 	color: #FFF !important;
 }
 /*Display the dropdown on hover*/
@@ -365,6 +371,9 @@ input, textarea {
 	margin: 0;
 	margin-top: -1px;
 	padding: 10px 0 0 0;
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	-moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .main-navigation ul ul li{
 	border-right: 0;
@@ -388,6 +397,16 @@ input, textarea {
 }
 .mobile-navigation  li a:hover{
 	background: #E0E0E0;
+}
+.main-navigation ul ul ul {
+	margin-left: 1px;
+	margin-top: -54px;
+}
+.main-navigation ul li:hover > ul {
+	left: auto;
+}
+.main-navigation ul ul li:hover > ul {
+	right: 100%;
 }
 .main-navigation .no-menu-msg {
 	padding-right: 10px;
