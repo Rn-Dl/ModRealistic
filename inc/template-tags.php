@@ -20,13 +20,13 @@ function realistic_time_ago() {
  
 	// Array of time period chunks
 	$chunks = array(
-		array( 60 * 60 * 24 * 365 , __( 'year', 'realistic' ), __( 'years', 'realistic' ) ),
-		array( 60 * 60 * 24 * 30 , __( 'month', 'realistic' ), __( 'months', 'realistic' ) ),
-		array( 60 * 60 * 24 * 7, __( 'week', 'realistic' ), __( 'weeks', 'realistic' ) ),
-		array( 60 * 60 * 24 , __( 'day', 'realistic' ), __( 'days', 'realistic' ) ),
-		array( 60 * 60 , __( 'hour', 'realistic' ), __( 'hours', 'realistic' ) ),
-		array( 60 , __( 'minute', 'realistic' ), __( 'minutes', 'realistic' ) ),
-		array( 1, __( 'second', 'realistic' ), __( 'seconds', 'realistic' ) )
+		array( 60 * 60 * 24 * 365 , __( 'year', 'modrealistic' ), __( 'years', 'modrealistic' ) ),
+		array( 60 * 60 * 24 * 30 , __( 'month', 'modrealistic' ), __( 'months', 'modrealistic' ) ),
+		array( 60 * 60 * 24 * 7, __( 'week', 'modrealistic' ), __( 'weeks', 'modrealistic' ) ),
+		array( 60 * 60 * 24 , __( 'day', 'modrealistic' ), __( 'days', 'modrealistic' ) ),
+		array( 60 * 60 , __( 'hour', 'modrealistic' ), __( 'hours', 'modrealistic' ) ),
+		array( 60 , __( 'minute', 'modrealistic' ), __( 'minutes', 'modrealistic' ) ),
+		array( 1, __( 'second', 'modrealistic' ), __( 'seconds', 'modrealistic' ) )
 	);
  
 	if ( !is_numeric( $date ) ) {
@@ -43,7 +43,7 @@ function realistic_time_ago() {
  
 	// Something went wrong with date calculation and we ended up with a negative date.
 	if ( 0 > $since )
-		return __( 'sometime', 'realistic' );
+		return __( 'sometime', 'modrealistic' );
 
 	//Step one: the first chunk
 	for ( $i = 0, $j = count($chunks); $i < $j; $i++) {
@@ -59,10 +59,10 @@ function realistic_time_ago() {
  
  
 	if ( !(int)trim($output) ){
-		$output = '0 ' . __( 'seconds', 'realistic' );
+		$output = '0 ' . __( 'seconds', 'modrealistic' );
 	}
  
-	$output .= __(' ago', 'realistic');
+	$output .= __(' ago', 'modrealistic');
     return $output;
 }
 
@@ -82,7 +82,7 @@ if ( ! function_exists( 'realistic_posted' ) ) {
 				esc_html( get_the_modified_date() )
 			);
 			$posted = sprintf(
-				_x( '%s', 'post date', 'realistic' ),
+				_x( '%s', 'post date', 'modrealistic' ),
 				$time_string 
 			);
 			return $posted;
@@ -99,7 +99,7 @@ if ( ! function_exists( 'realistic_entry_author' ) ) :
 function realistic_entry_author() {
     if ( 'post' == get_post_type() ) {
 		$byline = sprintf(
-		_x( '%s', 'post author', 'realistic' ),
+		_x( '%s', 'post author', 'modrealistic' ),
 		'<span class="author vcard"><span class="url fn"><a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span></span>'
 		);
 		return $byline;
@@ -113,9 +113,9 @@ if ( ! function_exists( 'realistic_entry_category' ) ) {
 		<span class="thecategory">
 			<?php     if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( '', 'realistic' ) );
+		$categories_list = get_the_category_list( __( '', 'modrealistic' ) );
 		if ( $categories_list && realistic_categorized_blog() ) {
-			printf( '<div class="thecategory">' . __( '%1$s', 'realistic' ) . '</div>', $categories_list );
+			printf( '<div class="thecategory">' . __( '%1$s', 'modrealistic' ) . '</div>', $categories_list );
 		}
     } ?>
 		</span>
@@ -127,9 +127,9 @@ if ( ! function_exists( 'realistic_entry_tags' ) ) :
 function realistic_entry_tags() {
     if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'realistic' ) );
+		$tags_list = get_the_tag_list( '', __( ', ', 'modrealistic' ) );
 		if ( $tags_list ) {
-			printf( '<span class="thetags"><i class="icon icon-tags"></i>'. __( '%1$s', 'realistic' ) .'</span>', $tags_list );
+			printf( '<span class="thetags"><i class="icon icon-tags"></i>'. __( '%1$s', 'modrealistic' ) .'</span>', $tags_list );
 		}
     }
 }
@@ -163,45 +163,45 @@ if ( ! function_exists( 'the_archive_title' ) ) :
  */
 function the_archive_title( $before = '', $after = '' ) {
 	if ( is_category() ) {
-		$title = sprintf( __( 'Category: %s', 'realistic' ), single_cat_title( '', false ) );
+		$title = sprintf( __( 'Category: %s', 'modrealistic' ), single_cat_title( '', false ) );
 	} elseif ( is_tag() ) {
-		$title = sprintf( __( 'Tag: %s', 'realistic' ), single_tag_title( '', false ) );
+		$title = sprintf( __( 'Tag: %s', 'modrealistic' ), single_tag_title( '', false ) );
 	} elseif ( is_author() ) {
-		$title = sprintf( __( 'Author: %s', 'realistic' ), '<span class="vcard">' . get_the_author() . '</span>' );
+		$title = sprintf( __( 'Author: %s', 'modrealistic' ), '<span class="vcard">' . get_the_author() . '</span>' );
 	} elseif ( is_year() ) {
-		$title = sprintf( __( 'Year: %s', 'realistic' ), get_the_date( _x( 'Y', 'yearly archives date format', 'realistic' ) ) );
+		$title = sprintf( __( 'Year: %s', 'modrealistic' ), get_the_date( _x( 'Y', 'yearly archives date format', 'modrealistic' ) ) );
 	} elseif ( is_month() ) {
-		$title = sprintf( __( 'Month: %s', 'realistic' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'realistic' ) ) );
+		$title = sprintf( __( 'Month: %s', 'modrealistic' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'modrealistic' ) ) );
 	} elseif ( is_day() ) {
-		$title = sprintf( __( 'Day: %s', 'realistic' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'realistic' ) ) );
+		$title = sprintf( __( 'Day: %s', 'modrealistic' ), get_the_date( _x( 'F j, Y', 'daily archives date format', 'modrealistic' ) ) );
 	} elseif ( is_tax( 'post_format' ) ) {
 		if ( is_tax( 'post_format', 'post-format-aside' ) ) {
-			$title = _x( 'Asides', 'post format archive title', 'realistic' );
+			$title = _x( 'Asides', 'post format archive title', 'modrealistic' );
 		} elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) {
-			$title = _x( 'Galleries', 'post format archive title', 'realistic' );
+			$title = _x( 'Galleries', 'post format archive title', 'modrealistic' );
 		} elseif ( is_tax( 'post_format', 'post-format-image' ) ) {
-			$title = _x( 'Images', 'post format archive title', 'realistic' );
+			$title = _x( 'Images', 'post format archive title', 'modrealistic' );
 		} elseif ( is_tax( 'post_format', 'post-format-video' ) ) {
-			$title = _x( 'Videos', 'post format archive title', 'realistic' );
+			$title = _x( 'Videos', 'post format archive title', 'modrealistic' );
 		} elseif ( is_tax( 'post_format', 'post-format-quote' ) ) {
-			$title = _x( 'Quotes', 'post format archive title', 'realistic' );
+			$title = _x( 'Quotes', 'post format archive title', 'modrealistic' );
 		} elseif ( is_tax( 'post_format', 'post-format-link' ) ) {
-			$title = _x( 'Links', 'post format archive title', 'realistic' );
+			$title = _x( 'Links', 'post format archive title', 'modrealistic' );
 		} elseif ( is_tax( 'post_format', 'post-format-status' ) ) {
-			$title = _x( 'Statuses', 'post format archive title', 'realistic' );
+			$title = _x( 'Statuses', 'post format archive title', 'modrealistic' );
 		} elseif ( is_tax( 'post_format', 'post-format-audio' ) ) {
-			$title = _x( 'Audio', 'post format archive title', 'realistic' );
+			$title = _x( 'Audio', 'post format archive title', 'modrealistic' );
 		} elseif ( is_tax( 'post_format', 'post-format-chat' ) ) {
-			$title = _x( 'Chats', 'post format archive title', 'realistic' );
+			$title = _x( 'Chats', 'post format archive title', 'modrealistic' );
 		}
 	} elseif ( is_post_type_archive() ) {
-		$title = sprintf( __( 'Archives: %s', 'realistic' ), post_type_archive_title( '', false ) );
+		$title = sprintf( __( 'Archives: %s', 'modrealistic' ), post_type_archive_title( '', false ) );
 	} elseif ( is_tax() ) {
 		$tax = get_taxonomy( get_queried_object()->taxonomy );
 		/* translators: 1: Taxonomy singular name, 2: Current taxonomy term */
-		$title = sprintf( __( '%1$s: %2$s', 'realistic' ), $tax->labels->singular_name, single_term_title( '', false ) );
+		$title = sprintf( __( '%1$s: %2$s', 'modrealistic' ), $tax->labels->singular_name, single_term_title( '', false ) );
 	} else {
-		$title = __( 'Archives', 'realistic' );
+		$title = __( 'Archives', 'modrealistic' );
 	}
 
 	/**

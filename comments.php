@@ -15,7 +15,7 @@
 	*/
 	
 	if ( post_password_required() ) { ?>
-	<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.','realistic'); ?></p>
+	<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.','modrealistic'); ?></p>
 	<?php
 		return;
 	}
@@ -23,7 +23,7 @@
 <!-- You can start editing here. -->
 <?php if ( have_comments() ) : ?>
 <div id="comments">
-	<h3 class="total-comments"><?php comments_number(__('No Comments','realistic'), __('One Comment','realistic'),  __('% Comments','realistic') );?></h3>
+	<h3 class="total-comments"><?php comments_number(__('No Comments','modrealistic'), __('One Comment','modrealistic'),  __('% Comments','modrealistic') );?></h3>
 	<ol class="commentlist clearfix">
 		<div class="navigation">
 			<div class="alignleft"><?php previous_comments_link() ?></div>
@@ -48,19 +48,19 @@
 <?php if ('open' == $post->comment_status) : ?>
 <div id="commentsAdd" class="mdl-cell mdl-cell--12-col">
 		<?php global $aria_req; $comments_args = array(
-			'title_reply'=> __('Add a Comment','realistic') ,
+			'title_reply'=> __('Add a Comment','modrealistic') ,
 			'comment_notes_after' => '',
-			'label_submit' => __( 'Add Comment', 'realistic' ),			
+			'label_submit' => __( 'Add Comment', 'modrealistic' ),			
 			'comment_field' => '<div class="comment-form-comment mdl-textfield mdl-js-textfield"><textarea id="comment" class="mdl-textfield__input" name="comment" cols="45" rows="8" aria-required="true"></textarea></div>',
 			'fields' => apply_filters( 'comment_form_default_fields',
 			array(
 				'author' => '<div class="comment-form-author mdl-textfield mdl-js-textfield">'
-				.'<label style="display:none" for="author">'. __( 'Name', 'realistic' ).'<span class="required"></span></label>'
-				.( $req ? '' : '' ).'<input id="author" class="mdl-textfield__input" name="author" type="text" placeholder="'.__('Name','realistic').'" value="'.esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
-				'email' => '<div class="comment-form-email mdl-textfield mdl-js-textfield"><label style="display:none" for="email">' . __( 'Email', 'realistic' ) . '<span class="required"></span></label>'
-				.($req ? '' : '' ) . '<input id="email" class="mdl-textfield__input" name="email" type="text" placeholder="'.__('Email','realistic').'" value="' . esc_attr(  $commenter['comment_author_email'] ).'" size="30"'.$aria_req.' /></div>',
-				'url' => '<div class="comment-form-url mdl-textfield mdl-js-textfield"><label style="display:none" for="url">' . __( 'Website', 'realistic' ).'</label>' . 
-				'<input id="url" class="mdl-textfield__input" name="url" type="text" placeholder="'.__('Website','realistic').'" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>'		
+				.'<label style="display:none" for="author">'. __( 'Name', 'modrealistic' ).'<span class="required"></span></label>'
+				.( $req ? '' : '' ).'<input id="author" class="mdl-textfield__input" name="author" type="text" placeholder="'.__('Name','modrealistic').'" value="'.esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
+				'email' => '<div class="comment-form-email mdl-textfield mdl-js-textfield"><label style="display:none" for="email">' . __( 'Email', 'modrealistic' ) . '<span class="required"></span></label>'
+				.($req ? '' : '' ) . '<input id="email" class="mdl-textfield__input" name="email" type="text" placeholder="'.__('Email','modrealistic').'" value="' . esc_attr(  $commenter['comment_author_email'] ).'" size="30"'.$aria_req.' /></div>',
+				'url' => '<div class="comment-form-url mdl-textfield mdl-js-textfield"><label style="display:none" for="url">' . __( 'Website', 'modrealistic' ).'</label>' . 
+				'<input id="url" class="mdl-textfield__input" name="url" type="text" placeholder="'.__('Website','modrealistic').'" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></div>'		
 			) )
 		); 
 		comment_form($comments_args); ?>

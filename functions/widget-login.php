@@ -13,8 +13,8 @@ class realistic_login_widget extends WP_Widget{
 	public function __construct() {
 		parent::__construct(
 	 		'realistic_login_widget',
-			__( 'ModRealistic: Login Widget','realistic' ),
-			array( 'description' => __( 'Display a login/register form on the sidebar.','realistic' ) )
+			__( 'ModRealistic: Login Widget','modrealistic' ),
+			array( 'description' => __( 'Display a login/register form on the sidebar.','modrealistic' ) )
 		);
 	}
 
@@ -31,7 +31,7 @@ class realistic_login_widget extends WP_Widget{
 			'show_profile' => 1
 		);
 		$instance = wp_parse_args((array) $instance, $defaults);
-		$title = isset( $instance[ 'title' ] ) ? $instance[ 'title' ] : __( 'Login','realistic' );
+		$title = isset( $instance[ 'title' ] ) ? $instance[ 'title' ] : __( 'Login','modrealistic' );
 		$show_avatar = isset( $instance[ 'show_avatar' ] ) ? esc_attr( $instance[ 'show_avatar' ] ) : 1;
 		$show_user = isset( $instance[ 'show_user' ] ) ? esc_attr( $instance[ 'show_user' ] ) : 1;
 		$show_remember = isset( $instance[ 'show_remember' ] ) ? esc_attr( $instance[ 'show_remember' ] ) : 1;
@@ -41,56 +41,56 @@ class realistic_login_widget extends WP_Widget{
 		$show_profile = isset( $instance[ 'show_profile' ] ) ? esc_attr( $instance[ 'show_profile' ] ) : 1; ?>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:','realistic' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:','modrealistic' ); ?></label> 
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 		
 		<p>
 			<label for="<?php echo $this->get_field_id("show_avatar"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_avatar"); ?>" name="<?php echo $this->get_field_name("show_avatar"); ?>" value="1" <?php if (isset($instance['show_avatar'])) { checked( 1, $instance['show_avatar'], true ); } ?> />
-				<?php _e( 'Show Avatar', 'realistic'); ?>
+				<?php _e( 'Show Avatar', 'modrealistic'); ?>
 			</label>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id("show_user"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_user"); ?>" name="<?php echo $this->get_field_name("show_user"); ?>" value="1" <?php if (isset($instance['show_user'])) { checked( 1, $instance['show_user'], true ); } ?> />
-				<?php _e( 'Show Logged in User name', 'realistic'); ?>
+				<?php _e( 'Show Logged in User name', 'modrealistic'); ?>
 			</label>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id("show_dash"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_dash"); ?>" name="<?php echo $this->get_field_name("show_dash"); ?>" value="1" <?php if (isset($instance['show_dash'])) { checked( 1, $instance['show_dash'], true ); } ?> />
-				<?php _e( 'Show Dashboard Link', 'realistic'); ?>
+				<?php _e( 'Show Dashboard Link', 'modrealistic'); ?>
 			</label>
 		</p>
 		
 		<p>
 			<label for="<?php echo $this->get_field_id("show_profile"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_profile"); ?>" name="<?php echo $this->get_field_name("show_profile"); ?>" value="1" <?php if (isset($instance['show_profile'])) { checked( 1, $instance['show_profile'], true ); } ?> />
-				<?php _e( 'Show Profile Link', 'realistic'); ?>
+				<?php _e( 'Show Profile Link', 'modrealistic'); ?>
 			</label>
 		</p>
 		
 		<p>
 			<label for="<?php echo $this->get_field_id("show_remember"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_remember"); ?>" name="<?php echo $this->get_field_name("show_remember"); ?>" value="1" <?php if (isset($instance['show_remember'])) { checked( 1, $instance['show_remember'], true ); } ?> />
-				<?php _e( 'Show Remember me', 'realistic'); ?>
+				<?php _e( 'Show Remember me', 'modrealistic'); ?>
 			</label>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id("show_register"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_register"); ?>" name="<?php echo $this->get_field_name("show_register"); ?>" value="1" <?php if (isset($instance['show_register'])) { checked( 1, $instance['show_register'], true ); } ?> />
-				<?php _e( 'Show Register Link', 'realistic'); ?>
+				<?php _e( 'Show Register Link', 'modrealistic'); ?>
 			</label>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id("show_forgot"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_forgot"); ?>" name="<?php echo $this->get_field_name("show_forgot"); ?>" value="1" <?php if (isset($instance['show_forgot'])) { checked( 1, $instance['show_forgot'], true ); } ?> />
-				<?php _e( 'Show Forgotten Password Link', 'realistic'); ?>
+				<?php _e( 'Show Forgotten Password Link', 'modrealistic'); ?>
 			</label>
 		</p>
 
@@ -124,12 +124,12 @@ class realistic_login_widget extends WP_Widget{
 
 		global $user_login;
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Login','realistic' );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Login','modrealistic' );
 
 		if( is_user_logged_in() ){
 			$user_info = get_user_by( 'login', $user_login );
 
-			$title = ( !empty( $user_info->first_name ) || !empty( $user_info->last_name) )? __('Welcome','realistic')." ".$user_info->first_name." ".$user_info->last_name : __('Welcome','realistic')." ".$user_login;
+			$title = ( !empty( $user_info->first_name ) || !empty( $user_info->last_name) )? __('Welcome','modrealistic')." ".$user_info->first_name." ".$user_info->last_name : __('Welcome','modrealistic')." ".$user_login;
 		}
 
 		echo $before_widget;
@@ -147,13 +147,13 @@ class realistic_login_widget extends WP_Widget{
 					if ( $login == 'failed' ){
 						
 						if ( $current_error == "empty_username" || $current_error == "empty_password" ){
-							$error_msg = __( 'Enter both Username and Password', 'realistic' );
+							$error_msg = __( 'Enter both Username and Password', 'modrealistic' );
 						}
 						elseif( $current_error == 'invalid_username' ){
-							$error_msg = __( 'Username is not registered', 'realistic' );
+							$error_msg = __( 'Username is not registered', 'modrealistic' );
 						}
 						elseif( $current_error == 'incorrect_password' ){
-							$error_msg = __( 'Incorrect Password', 'realistic' );
+							$error_msg = __( 'Incorrect Password', 'modrealistic' );
 						}
 							
 						echo "<div id='message' class='error fade'><p><strong>".$error_msg."</strong></p></div>";
@@ -171,18 +171,18 @@ class realistic_login_widget extends WP_Widget{
 
 					echo '<div class="login-info">';
 					if( $show_user == 1 ){	
-						_e( 'Logged in as ', 'realistic' );
+						_e( 'Logged in as ', 'modrealistic' );
 						echo '<strong>' . ucfirst( implode(', ', $user_info->roles)) . '</strong> <br>';
 					} ?>
 						
 					<ul id="<?php if( $show_avatar == 1 ) echo 'sidebar-login-links'; else echo 'sidebar-login-links-left'; ?>">
 						<?php if( $show_dash == 1 ) { ?>
-							<li><a href="<?php echo admin_url() ?>"><?php _e( 'Dashboard' , 'realistic' ) ?> </a>|</li>
+							<li><a href="<?php echo admin_url() ?>"><?php _e( 'Dashboard' , 'modrealistic' ) ?> </a>|</li>
 						<?php }
 						if( $show_profile == 1 ) { ?>
-							<li><a href="<?php echo admin_url() ?>profile.php"><?php _e( 'Profile' , 'realistic' ) ?> </a>|</li>
+							<li><a href="<?php echo admin_url() ?>profile.php"><?php _e( 'Profile' , 'modrealistic' ) ?> </a>|</li>
 						<?php } ?>	
-							<li><a href="<?php echo wp_logout_url($redirect); ?>"><?php _e( 'Logout' , 'realistic' ) ?> </a></li>
+							<li><a href="<?php echo wp_logout_url($redirect); ?>"><?php _e( 'Logout' , 'modrealistic' ) ?> </a></li>
 					</ul>
 					<?php echo "</div>";					
 						
@@ -193,16 +193,16 @@ class realistic_login_widget extends WP_Widget{
 					
 					wp_login_form(array( 'value_remember' => 0,
 								 'redirect' => $redirect,
-								 'label_username' 	=> __( 'Username', 'realistic' ),
-								 'label_password' 	=> __( 'Password', 'realistic' ),
+								 'label_username' 	=> __( 'Username', 'modrealistic' ),
+								 'label_password' 	=> __( 'Password', 'modrealistic' ),
 								 'remember' 	=> $remember_val
 								));
 					?>
 					<p id="reglostpass" class="reglostpass">
 						<?php
-						if ( $show_register == 1 ) echo '<a href="' . wp_registration_url() . '" title="Register">'.__('Register', 'realistic').'</a>';
+						if ( $show_register == 1 ) echo '<a href="' . wp_registration_url() . '" title="Register">'.__('Register', 'modrealistic').'</a>';
 						if ( $show_register == 1 && $show_forgot == 1 )echo " |  ";
-						if ( $show_forgot == 1 ) echo '<a href="' . wp_lostpassword_url($redirect) . '?sli=lost" rel="nofollow" title="Forgot Password">' . __('Forgot Password?','realistic') . '</a>';
+						if ( $show_forgot == 1 ) echo '<a href="' . wp_lostpassword_url($redirect) . '?sli=lost" rel="nofollow" title="Forgot Password">' . __('Forgot Password?','modrealistic') . '</a>';
 						?>
 					</p>
 					<?php
@@ -235,7 +235,7 @@ if ( !function_exists('wp_authenticate') ) {
 		$password = trim($password);
 		$user = apply_filters('authenticate', null, $username, $password);
 		if ( $user == null ) {
-			$user = new WP_Error('authentication_failed', __('<strong>ERROR</strong>: Invalid username or incorrect password.', 'realistic' ));
+			$user = new WP_Error('authentication_failed', __('<strong>ERROR</strong>: Invalid username or incorrect password.', 'modrealistic' ));
 		}
 		$ignore_codes = array('empty_username', 'empty_password', 'invalid_username', 'incorrect_password');
 		

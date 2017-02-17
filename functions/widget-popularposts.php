@@ -12,8 +12,8 @@ class realistic_popular_posts_widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 	 		'realistic_popular_posts_widget',
-			__('ModRealistic: Popular Posts','realistic'),
-			array( 'description' => __( 'Displays most Popular Posts with Thumbnail.','realistic' ) )
+			__('ModRealistic: Popular Posts','modrealistic'),
+			array( 'description' => __( 'Displays most Popular Posts with Thumbnail.','modrealistic' ) )
 		);
 	}
 
@@ -25,7 +25,7 @@ class realistic_popular_posts_widget extends WP_Widget {
 			'show_thumb' => 1,
 		);
 		$instance = wp_parse_args((array) $instance, $defaults);
-		$title = isset( $instance[ 'title' ] ) ? $instance[ 'title' ] : __( 'Popular Posts','realistic' );
+		$title = isset( $instance[ 'title' ] ) ? $instance[ 'title' ] : __( 'Popular Posts','modrealistic' );
 		$qty = isset( $instance[ 'qty' ] ) ? intval( $instance[ 'qty' ] ) : 5;
 		$comments = isset( $instance[ 'comments' ] ) ? intval( $instance[ 'comments' ] ) : 1;
 		$date = isset( $instance[ 'date' ] ) ? intval( $instance[ 'date' ] ) : 1;
@@ -33,39 +33,39 @@ class realistic_popular_posts_widget extends WP_Widget {
 		$show_thumb = isset( $instance[ 'show_thumb' ] ) ? intval( $instance[ 'show_thumb' ] ) : 1;
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:','realistic' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:','modrealistic' ); ?></label> 
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 		
 		<p>
-	       <label for="<?php echo $this->get_field_id( 'days' ); ?>"><?php _e( 'Popular limit (days), 0 for No-limit', 'realistic' ); ?>
+	       <label for="<?php echo $this->get_field_id( 'days' ); ?>"><?php _e( 'Popular limit (days), 0 for No-limit', 'modrealistic' ); ?>
 	       <input id="<?php echo $this->get_field_id( 'days' ); ?>" name="<?php echo $this->get_field_name( 'days' ); ?>" type="number" min="1" step="1" value="<?php echo $days; ?>" />
 	       </label>
        </p>
 	   
 		<p>
-			<label for="<?php echo $this->get_field_id( 'qty' ); ?>"><?php _e( 'Number of Posts to show','realistic' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'qty' ); ?>"><?php _e( 'Number of Posts to show','modrealistic' ); ?></label> 
 			<input id="<?php echo $this->get_field_id( 'qty' ); ?>" name="<?php echo $this->get_field_name( 'qty' ); ?>" type="number" min="1" step="1" value="<?php echo $qty; ?>" />
 		</p>
 		
 		<p>
 			<label for="<?php echo $this->get_field_id("show_thumb"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_thumb"); ?>" name="<?php echo $this->get_field_name("show_thumb"); ?>" value="1" <?php if (isset($instance['show_thumb'])) { checked( 1, $instance['show_thumb'], true ); } ?> />
-				<?php _e( 'Show Thumbnails', 'realistic'); ?>
+				<?php _e( 'Show Thumbnails', 'modrealistic'); ?>
 			</label>
 		</p>
 		
 		<p>
 			<label for="<?php echo $this->get_field_id("date"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("date"); ?>" name="<?php echo $this->get_field_name("date"); ?>" value="1" <?php if (isset($instance['date'])) { checked( 1, $instance['date'], true ); } ?> />
-				<?php _e( 'Show post date', 'realistic'); ?>
+				<?php _e( 'Show post date', 'modrealistic'); ?>
 			</label>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id("comments"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("comments"); ?>" name="<?php echo $this->get_field_name("comments"); ?>" value="1" <?php checked( 1, $instance['comments'], true ); ?> />
-				<?php _e( 'Show comments number', 'realistic'); ?>
+				<?php _e( 'Show comments number', 'modrealistic'); ?>
 			</label>
 		</p>
 		<?php 

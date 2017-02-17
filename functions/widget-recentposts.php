@@ -12,8 +12,8 @@ class realistic_recent_posts_widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 	 		'realistic_recent_posts_widget',
-			__('ModRealistic: Recent Posts', 'realistic'),
-			array( 'description' => __( 'Display the most recent posts from all categories.', 'realistic' ) )
+			__('ModRealistic: Recent Posts', 'modrealistic'),
+			array( 'description' => __( 'Display the most recent posts from all categories.', 'modrealistic' ) )
 		);
 	}
 
@@ -24,40 +24,40 @@ class realistic_recent_posts_widget extends WP_Widget {
 			'show_thumb' => 1,
 		);
 		$instance = wp_parse_args((array) $instance, $defaults);
-		$title = isset( $instance[ 'title' ] ) ? $instance[ 'title' ] : __( 'Recent Posts', 'realistic' );
+		$title = isset( $instance[ 'title' ] ) ? $instance[ 'title' ] : __( 'Recent Posts', 'modrealistic' );
 		$qty = isset( $instance[ 'qty' ] ) ? intval( $instance[ 'qty' ] ) : 5;
 		$comments = isset( $instance[ 'comments' ] ) ? esc_attr( $instance[ 'comments' ] ) : 1;
 		$date = isset( $instance[ 'date' ] ) ? esc_attr( $instance[ 'date' ] ) : 1;
 		$show_thumb = isset( $instance[ 'show_thumb' ] ) ? esc_attr( $instance[ 'show_thumb' ] ) : 1;
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:','realistic' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:','modrealistic' ); ?></label> 
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 		
 		<p>
-			<label for="<?php echo $this->get_field_id( 'qty' ); ?>"><?php _e( 'Number of Posts to show','realistic' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'qty' ); ?>"><?php _e( 'Number of Posts to show','modrealistic' ); ?></label> 
 			<input id="<?php echo $this->get_field_id( 'qty' ); ?>" name="<?php echo $this->get_field_name( 'qty' ); ?>" type="number" min="1" max="10" step="1" value="<?php echo $qty; ?>" />
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id("show_thumb"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("show_thumb"); ?>" name="<?php echo $this->get_field_name("show_thumb"); ?>" value="1" <?php if (isset($instance['show_thumb'])) { checked( 1, $instance['show_thumb'], true ); } ?> />
-				<?php _e( 'Show Thumbnails', 'realistic'); ?>
+				<?php _e( 'Show Thumbnails', 'modrealistic'); ?>
 			</label>
 		</p>
 		
 		<p>
 			<label for="<?php echo $this->get_field_id("date"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("date"); ?>" name="<?php echo $this->get_field_name("date"); ?>" value="1" <?php checked( 1, $instance['date'], true ); ?> />
-				<?php _e( 'Show post date', 'realistic'); ?>
+				<?php _e( 'Show post date', 'modrealistic'); ?>
 			</label>
 		</p>
 
 		<p>
 			<label for="<?php echo $this->get_field_id("comments"); ?>">
 				<input type="checkbox" class="checkbox" id="<?php echo $this->get_field_id("comments"); ?>" name="<?php echo $this->get_field_name("comments"); ?>" value="1" <?php checked( 1, $instance['comments'], true ); ?> />
-				<?php _e( 'Show comments number', 'realistic'); ?>
+				<?php _e( 'Show comments number', 'modrealistic'); ?>
 			</label>
 		</p>
 	   
@@ -82,7 +82,7 @@ class realistic_recent_posts_widget extends WP_Widget {
 		$qty = (int) $instance['qty'];
 		$show_thumb = (int) $instance['show_thumb'];
 
-		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts','realistic' );
+		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recent Posts','modrealistic' );
 		
 		echo $before_widget;
 		if ( ! empty( $title ) ) echo $before_title . $title . $after_title;

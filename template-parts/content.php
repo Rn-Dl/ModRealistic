@@ -24,11 +24,11 @@
 					<i class="material-icons">more_vert</i>
 				</button>	
 				<ul class="post-actions-menu mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="post-actions<?php the_ID(); ?>">
-					<?php edit_post_link( __( 'Edit', 'realistic' ), '<li class="mdl-menu__item">', '</li>'); ?>
+					<?php edit_post_link( __( 'Edit', 'modrealistic' ), '<li class="mdl-menu__item">', '</li>'); ?>
 					<?php $post_type = get_post_type($post);
 					$delLink = wp_nonce_url( admin_url() . "post.php?post=" . $post->ID . "&action=delete", 'delete-' . $post_type . '_' . $post->ID); ?>
 					<li class="mdl-menu__item">
-						<a href="<?php echo $delLink; ?>"><?php _e( 'Delete', 'realistic' ); ?></a>
+						<a href="<?php echo $delLink; ?>"><?php _e( 'Delete', 'modrealistic' ); ?></a>
 					</li>
 				</ul>
 			<?php }
@@ -43,7 +43,7 @@
 				</span>
 			</div><!-- .entry-content -->
 			<div class="moretag">
-				<a class="mdl-button mdl-js-button" href="<?php the_permalink(); ?>"><?php _e( 'View article...', 'realistic' ); ?></a>
+				<a class="mdl-button mdl-js-button" href="<?php the_permalink(); ?>"><?php _e( 'View article...', 'modrealistic' ); ?></a>
 			</div>
 		</div><!-- .post-data -->
 	</article><!-- #post-## -->

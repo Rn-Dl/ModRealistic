@@ -12,11 +12,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
 				<header class="page-header">
-					<h1 class="page-title mdl-cell mdl-cell--12-col"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'realistic' ); ?></h1>
+					<h1 class="page-title mdl-cell mdl-cell--12-col"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'modrealistic' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content mdl-cell mdl-cell--12-col">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'realistic' ); ?></p>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'modrealistic' ); ?></p>
 
 					<?php get_search_form(); ?>
 
@@ -24,7 +24,7 @@ get_header(); ?>
 
 					<?php if ( realistic_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'realistic' ); ?></h2>
+						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'modrealistic' ); ?></h2>
 						<ul>
 						<?php
 							wp_list_categories( array(
@@ -41,7 +41,7 @@ get_header(); ?>
 
 					<?php
 						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'realistic' ), convert_smilies( ':)' ) ) . '</p>';
+						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'modrealistic' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 

@@ -11,7 +11,7 @@
 	<div class="breadcrumb mdl-color-text--grey-500" xmlns:v="http://rdf.data-vocabulary.org/#"><?php realistic_breadcrumb(); ?></div>   
 	<header class="entry-header">
 		<?php 
-		_e(' in ', 'realistic');
+		_e(' in ', 'modrealistic');
 		$category = get_the_category();
 		echo '<span class="category"><a class="mdl-button mdl-js-button" href="' . get_category_link( $category[0]->term_id ) . '" title="' . sprintf( __( "View all posts in %s", "realistic" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a></span>';
 		the_title( '<h1 class="entry-title post-title">', '</h1>' ); ?>
@@ -22,7 +22,7 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'realistic' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'modrealistic' ),
 				'after'  => '</div>',
 			) ); ?>
 	</div><!-- .entry-content -->

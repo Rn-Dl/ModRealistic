@@ -35,9 +35,9 @@
 					wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container' => '' ) );
 				}else { 
 					if ( current_user_can( 'edit_theme_options' ) ) { ?>
-						<div class="no-menu-msg"><a href="<?php echo get_site_url() .'/wp-admin/nav-menus.php'; ?>"><?php _e('Add Menu', 'realistic'); ?></a></div>
+						<div class="no-menu-msg"><a href="<?php echo get_site_url() .'/wp-admin/nav-menus.php'; ?>"><?php _e('Add Menu', 'modrealistic'); ?></a></div>
 					<?php } else { ?>
-						<div class="no-menu-msg"><?php _e('Go to Appearance => Menus and assign a Menu to this location.', 'realistic'); ?></div>
+						<div class="no-menu-msg"><?php _e('Go to Appearance => Menus and assign a Menu to this location.', 'modrealistic'); ?></div>
 					<?php }
 				} ?>
 			</nav>
@@ -62,9 +62,9 @@
 				wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_id' => 'mobile-menu', 'container' => '' ) ); 
 			}else { 
 				if ( current_user_can( 'edit_theme_options' ) ) { ?>
-					<div class="no-menu-msg"><a href="<?php echo get_site_url() .'/wp-admin/nav-menus.php'; ?>"><?php _e('Add Menu', 'realistic'); ?></a></div>
+					<div class="no-menu-msg"><a href="<?php echo get_site_url() .'/wp-admin/nav-menus.php'; ?>"><?php _e('Add Menu', 'modrealistic'); ?></a></div>
 				<?php } else { ?>
-					<div class="no-menu-msg"><?php _e('Go to Appearance => Menus and assign a Menu to this location.', 'realistic'); ?></div>
+					<div class="no-menu-msg"><?php _e('Go to Appearance => Menus and assign a Menu to this location.', 'modrealistic'); ?></div>
 				<?php }
 			} ?>
 		</nav><!-- #site-navigation -->

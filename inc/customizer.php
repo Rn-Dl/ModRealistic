@@ -17,7 +17,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 	// General Settings
 	$wp_customize->add_section( 
 		'general_settings', array(
-		'title' => __( 'General Settings', 'realistic' ),
+		'title' => __( 'General Settings', 'modrealistic' ),
 		'priority' => 10,
 	) );
 		
@@ -46,7 +46,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 		$wp_customize->add_control(
 			'footer_left',
 			array(
-				'label' => __( 'Copyright Text', 'realistic' ),
+				'label' => __( 'Copyright Text', 'modrealistic' ),
 				'section' => 'general_settings',
 				'settings' => 'footer_left',
 				'type' => 'textarea',
@@ -69,7 +69,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 				$wp_customize,
 				'logo_image',
 				array(
-					'label' => __( 'Logo Image', 'realistic' ),
+					'label' => __( 'Logo Image', 'modrealistic' ),
 					'section' => 'title_tagline',
 					'settings' => 'logo_image',
 				)
@@ -79,7 +79,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 	// Archives Settings
 	$wp_customize->add_section( 
 		'archives_settings', array(
-			'title' => __( 'Archives Settings', 'realistic' ),
+			'title' => __( 'Archives Settings', 'modrealistic' ),
 			'priority' => 20
 	) );		
 
@@ -146,7 +146,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Switcher_Control(
 				$wp_customize,			
 				'archives_post_meta', array(
-					'label' =>  __( 'Archives Meta', 'realistic' ),
+					'label' =>  __( 'Archives Meta', 'modrealistic' ),
 					'section' => 'archives_settings',
 				)
 			)
@@ -178,7 +178,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Number_Control(
 				$wp_customize,
 				'excerpt_length', array(
-					'label'    => __( 'Excerpt Length', 'realistic' ),
+					'label'    => __( 'Excerpt Length', 'modrealistic' ),
 					'section'  => 'archives_settings',
 					'settings' => 'excerpt_length',
 				) 
@@ -189,7 +189,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 	// Article Settings
 	$wp_customize->add_section( 
 		'article_settings', array(
-			'title' => __( 'Article Settings', 'realistic' ),
+			'title' => __( 'Article Settings', 'modrealistic' ),
 			'priority' => 30
 	) );	
 
@@ -205,7 +205,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Switcher_Control(
 				$wp_customize,	
 				'post_meta', array(
-					'label' =>  __( 'Post Meta', 'realistic' ),
+					'label' =>  __( 'Post Meta', 'modrealistic' ),
 					'section' => 'article_settings',
 				)
 			)
@@ -223,7 +223,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Switcher_Control(
 				$wp_customize,	
 				'related_posts', array(
-					'label' =>  __( 'Related Posts', 'realistic' ),
+					'label' =>  __( 'Related Posts', 'modrealistic' ),
 					'section' => 'article_settings',
 				)
 			)
@@ -238,7 +238,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 				
 		$wp_customize->add_control( 
 			'related_posts_number', array(
-				'label'    => __( 'Related Posts Number', 'realistic' ),
+				'label'    => __( 'Related Posts Number', 'modrealistic' ),
 				'section'  => 'article_settings',
 				'settings' => 'related_posts_number',
 				'type'     => 'number'
@@ -256,11 +256,11 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 		$wp_customize->add_control(
 			'related_posts_query', array(
 				'type' => 'radio',
-				'label' => __( 'Related Posts Query', 'realistic' ),
+				'label' => __( 'Related Posts Query', 'modrealistic' ),
 				'section' => 'article_settings',
 				'choices' => array(
-					'tags' => __( 'Tags', 'realistic' ),
-					'categories' => __( 'Categories', 'realistic' ),
+					'tags' => __( 'Tags', 'modrealistic' ),
+					'categories' => __( 'Categories', 'modrealistic' ),
 				),
 			)
 		);		
@@ -277,7 +277,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Switcher_Control(
 				$wp_customize,			
 				'next_prev_post', array(
-					'label' =>  __( 'Next/Prev Article', 'realistic' ),
+					'label' =>  __( 'Next/Prev Article', 'modrealistic' ),
 					'section' => 'article_settings',
 				)
 			)
@@ -295,7 +295,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Switcher_Control(
 				$wp_customize,	
 				'author_box', array(
-					'label' =>  __( 'Post Author Box', 'realistic' ),
+					'label' =>  __( 'Post Author Box', 'modrealistic' ),
 					'section' => 'article_settings',
 				)
 			)
@@ -305,7 +305,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 	// Design & Layout
 	$wp_customize->add_section( 
 		'design_layout', array(
-			'title' => __( 'Design & Layout', 'realistic' ),
+			'title' => __( 'Design & Layout', 'modrealistic' ),
 			'priority' => 40
 	) );	
 		
@@ -322,7 +322,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Radio_Image_Control(
 				$wp_customize,	
 				'sidebar_settings', array(
-					'label' => __( 'Sidebar Settings', 'realistic' ),
+					'label' => __( 'Sidebar Settings', 'modrealistic' ),
 					'section' => 'design_layout',
 					'choices' => array(
 						'right_sidebar' => get_template_directory_uri() .'/images/customizer/right.jpg',
@@ -345,7 +345,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Radio_Image_Control(
 				$wp_customize,	
 				'theme_color', array(
-					'label' => __( 'Color Scheme', 'realistic' ),
+					'label' => __( 'Color Scheme', 'modrealistic' ),
 					'section' => 'design_layout',
 					'choices' => array(
 						'indigo-pink' => get_template_directory_uri() .'/images/customizer/indigo-pink.png',
@@ -371,12 +371,12 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 		$wp_customize->add_control(
 			'background_settings', array(
 				'type' => 'radio',
-				'label' => __( 'Background settings', 'realistic' ),
+				'label' => __( 'Background settings', 'modrealistic' ),
 				'section' => 'design_layout',
 				'choices' => array(
-					'color' => __( 'Color', 'realistic' ),
-					'pattern' => __( 'Pattern', 'realistic' ),					
-					'custom_image' => __( 'Custom image', 'realistic' ),
+					'color' => __( 'Color', 'modrealistic' ),
+					'pattern' => __( 'Pattern', 'modrealistic' ),					
+					'custom_image' => __( 'Custom image', 'modrealistic' ),
 				),
 			)
 		);		
@@ -395,7 +395,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 				$wp_customize,
 				'bg_color',
 				array(
-					'label' => __( 'Background color', 'realistic' ),
+					'label' => __( 'Background color', 'modrealistic' ),
 					'section' => 'design_layout',
 					'settings' => 'bg_color',
 				)
@@ -415,7 +415,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 			new Realistic_Customizer_Radio_Image_Control(
 				$wp_customize,	
 				'background_pattern', array(
-					'label' => __( 'Background pattern', 'realistic' ),
+					'label' => __( 'Background pattern', 'modrealistic' ),
 					'section' => 'design_layout',
 					'choices' => array(
 							get_template_directory_uri() .'/images/patterns/21.gif' => get_template_directory_uri() .'/images/patterns/21.gif',
@@ -476,7 +476,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 				$wp_customize,
 				'background_image',
 				array(
-					'label' => __( 'Custom background image', 'realistic' ),
+					'label' => __( 'Custom background image', 'modrealistic' ),
 					'section' => 'design_layout',
 					'settings' => 'background_image',
 				)
@@ -493,13 +493,13 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 		$wp_customize->add_control(
 			'background_image_repeat', array(
 				'type' => 'select',
-				'label' => __( 'Repeat', 'realistic' ),
+				'label' => __( 'Repeat', 'modrealistic' ),
 				'section' => 'design_layout',
 				'choices' => array(
-					'repeat' => __( 'Repeat', 'realistic' ),
-					'repeat-x' => __( 'Repeat-x', 'realistic' ),
-					'repeat-y' => __( 'Repeat-y', 'realistic' ),
-					'no-repeat' => __( 'No-repeat', 'realistic' ),					
+					'repeat' => __( 'Repeat', 'modrealistic' ),
+					'repeat-x' => __( 'Repeat-x', 'modrealistic' ),
+					'repeat-y' => __( 'Repeat-y', 'modrealistic' ),
+					'no-repeat' => __( 'No-repeat', 'modrealistic' ),					
 				),
 			)
 		);
@@ -514,11 +514,11 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 		$wp_customize->add_control(
 			'background_image_attachment', array(
 				'type' => 'select',
-				'label' => __( 'Attachment', 'realistic' ),
+				'label' => __( 'Attachment', 'modrealistic' ),
 				'section' => 'design_layout',
 				'choices' => array(
-					'scroll' => __( 'Scroll', 'realistic' ),
-					'fixed' => __( 'Fixed', 'realistic' ),				
+					'scroll' => __( 'Scroll', 'modrealistic' ),
+					'fixed' => __( 'Fixed', 'modrealistic' ),				
 				),
 			)
 		);
@@ -533,18 +533,18 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 		$wp_customize->add_control(
 			'background_image_position', array(
 				'type' => 'select',
-				'label' => __( 'Position', 'realistic' ),
+				'label' => __( 'Position', 'modrealistic' ),
 				'section' => 'design_layout',
 				'choices' => array(
-					'left top' => __( 'Left top', 'realistic' ),
-					'left center' => __( 'Left center', 'realistic' ),
-					'left bottom' => __( 'Left bottom', 'realistic' ),
-					'right top' => __( 'Right top', 'realistic' ),
-					'right center' => __( 'Right center', 'realistic' ),
-					'right bottom' => __( 'Right bottom', 'realistic' ),
-					'center top' => __( 'Center top', 'realistic' ),
-					'center center' => __( 'Center center', 'realistic' ),
-					'center bottom' => __( 'Center bottom', 'realistic' ),				
+					'left top' => __( 'Left top', 'modrealistic' ),
+					'left center' => __( 'Left center', 'modrealistic' ),
+					'left bottom' => __( 'Left bottom', 'modrealistic' ),
+					'right top' => __( 'Right top', 'modrealistic' ),
+					'right center' => __( 'Right center', 'modrealistic' ),
+					'right bottom' => __( 'Right bottom', 'modrealistic' ),
+					'center top' => __( 'Center top', 'modrealistic' ),
+					'center center' => __( 'Center center', 'modrealistic' ),
+					'center bottom' => __( 'Center bottom', 'modrealistic' ),				
 				),
 			)
 		);
@@ -560,7 +560,7 @@ function realistic_options_theme_customizer_register( $wp_customize ) {
 		$wp_customize->add_control(
 			'custom_css',
 			array(
-				'label' => __( 'Custom CSS', 'realistic' ),
+				'label' => __( 'Custom CSS', 'modrealistic' ),
 				'section' => 'design_layout',
 				'settings' => 'custom_css',
 				'type' => 'textarea',
@@ -643,10 +643,10 @@ function realistic_sanitize_background_settings( $input ) {
 // Sanitize background image repeat
 function realistic_sanitize_background_image_repeat( $input ) {
     $valid = array(
-		'repeat' => __( 'Repeat', 'realistic' ),
-		'repeat-x' => __( 'Repeat-x', 'realistic' ),
-		'repeat-y' => __( 'Repeat-y', 'realistic' ),
-		'no-repeat' => __( 'No-repeat', 'realistic' ),
+		'repeat' => __( 'Repeat', 'modrealistic' ),
+		'repeat-x' => __( 'Repeat-x', 'modrealistic' ),
+		'repeat-y' => __( 'Repeat-y', 'modrealistic' ),
+		'no-repeat' => __( 'No-repeat', 'modrealistic' ),
     );
  
     if ( array_key_exists( $input, $valid ) ) {
@@ -659,8 +659,8 @@ function realistic_sanitize_background_image_repeat( $input ) {
 // Sanitize background image attachment
 function realistic_sanitize_background_image_attachment( $input ) {
     $valid = array(
-		'scroll' => __( 'Scroll', 'realistic' ),
-		'fixed' => __( 'Fixed', 'realistic' ),
+		'scroll' => __( 'Scroll', 'modrealistic' ),
+		'fixed' => __( 'Fixed', 'modrealistic' ),
     );
  
     if ( array_key_exists( $input, $valid ) ) {
@@ -673,15 +673,15 @@ function realistic_sanitize_background_image_attachment( $input ) {
 // Sanitize background image position
 function realistic_sanitize_background_image_position( $input ) {
     $valid = array(
-		'left top' => __( 'Left top', 'realistic' ),
-		'left center' => __( 'Left center', 'realistic' ),
-		'left bottom' => __( 'Left bottom', 'realistic' ),
-		'right top' => __( 'Right top', 'realistic' ),
-		'right center' => __( 'Right center', 'realistic' ),
-		'right bottom' => __( 'Right bottom', 'realistic' ),
-		'center top' => __( 'Center top', 'realistic' ),
-		'center center' => __( 'Center center', 'realistic' ),
-		'center bottom' => __( 'Center bottom', 'realistic' ),
+		'left top' => __( 'Left top', 'modrealistic' ),
+		'left center' => __( 'Left center', 'modrealistic' ),
+		'left bottom' => __( 'Left bottom', 'modrealistic' ),
+		'right top' => __( 'Right top', 'modrealistic' ),
+		'right center' => __( 'Right center', 'modrealistic' ),
+		'right bottom' => __( 'Right bottom', 'modrealistic' ),
+		'center top' => __( 'Center top', 'modrealistic' ),
+		'center center' => __( 'Center center', 'modrealistic' ),
+		'center bottom' => __( 'Center bottom', 'modrealistic' ),
     );
  
     if ( array_key_exists( $input, $valid ) ) {

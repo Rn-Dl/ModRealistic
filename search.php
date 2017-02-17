@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title margin-8"><?php printf( esc_html__( 'Search Results for: %s', 'realistic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="page-title margin-8"><?php printf( esc_html__( 'Search Results for: %s', 'modrealistic' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -32,8 +32,8 @@ get_header(); ?>
 
 			<?php the_posts_pagination( array(
 				'mid_size' => 2,
-				'prev_text' => __( '&#8249; Previous', 'realistic' ),
-				'next_text' => __( 'Next &#8250;', 'realistic' ),
+				'prev_text' => __( '&#8249; Previous', 'modrealistic' ),
+				'next_text' => __( 'Next &#8250;', 'modrealistic' ),
 			) ); ?>
 
 		<?php else : ?>

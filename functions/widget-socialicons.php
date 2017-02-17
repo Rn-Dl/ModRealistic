@@ -47,95 +47,95 @@ class realistic_social_icons_widget extends WP_Widget {
 
 		$this->profiles = array(
 			'facebook' => array(
-				'label'	  => __( 'Facebook URI', 'realistic' ),
+				'label'	  => __( 'Facebook URI', 'modrealistic' ),
 				'pattern' => '<li class="social-facebook"><a title="Facebook" href="%s" %s><i class="icon icon-facebook"></i></a></li>',
 			),
 			'twitter' => array(
-				'label'	  => __( 'Twitter URI', 'realistic' ),
+				'label'	  => __( 'Twitter URI', 'modrealistic' ),
 				'pattern' => '<li class="social-twitter"><a title="Twitter" href="%s" %s><i class="icon icon-twitter"></i></a></li>',
 			),
 			'gplus' => array(
-				'label'	  => __( 'Google+ URI', 'realistic' ),
+				'label'	  => __( 'Google+ URI', 'modrealistic' ),
 				'pattern' => '<li class="social-gplus"><a title="Google+" href="%s" %s><i class="icon icon-gplus"></i></a></li>',
 			),
 			'youtube' => array(
-				'label'	  => __( 'YouTube URI', 'realistic' ),
+				'label'	  => __( 'YouTube URI', 'modrealistic' ),
 				'pattern' => '<li class="social-youtube"><a title="YouTube" href="%s" %s><i class="icon icon-youtube"></i></a></li>',
 			),			
 			'rss' => array(
-				'label'	  => __( 'RSS URI', 'realistic' ),
+				'label'	  => __( 'RSS URI', 'modrealistic' ),
 				'pattern' => '<li class="social-rss"><a title="RSS" href="%s" %s><i class="icon icon-rss"></i></a></li>',
 			),			
 			'pinterest' => array(
-				'label'	  => __( 'Pinterest URI', 'realistic' ),
+				'label'	  => __( 'Pinterest URI', 'modrealistic' ),
 				'pattern' => '<li class="social-pinterest"><a title="Pinterest" href="%s" %s><i class="icon icon-pinterest"></i></a></li>',
 			),			
 			'linkedin' => array(
-				'label'	  => __( 'Linkedin URI', 'realistic' ),
+				'label'	  => __( 'Linkedin URI', 'modrealistic' ),
 				'pattern' => '<li class="social-linkedin"><a title="LinkedIn" href="%s" %s><i class="icon icon-linkedin"></i></a></li>',
 			),			
 			'stumbleupon' => array(
-				'label'	  => __( 'StumbleUpon URI', 'realistic' ),
+				'label'	  => __( 'StumbleUpon URI', 'modrealistic' ),
 				'pattern' => '<li class="social-stumbleupon"><a title="StumbleUpon" href="%s" %s><i class="icon icon-stumbleupon"></i></a></li>',
 			),
 			'reddit' => array(
-				'label'	  => __( 'Reddit URI', 'realistic' ),
+				'label'	  => __( 'Reddit URI', 'modrealistic' ),
 				'pattern' => '<li class="social-reddit"><a title="Reddit" href="%s" %s><i class="icon icon-reddit"></i></a></li>',
 			),			
 			'tumblr' => array(
-				'label'	  => __( 'Tumblr URI', 'realistic' ),
+				'label'	  => __( 'Tumblr URI', 'modrealistic' ),
 				'pattern' => '<li class="social-tumblr"><a title="Tumblr" href="%s" %s><i class="icon icon-tumblr"></i></a></li>',
 			),			
 			'instagram' => array(
-				'label'	  => __( 'Instagram URI', 'realistic' ),
+				'label'	  => __( 'Instagram URI', 'modrealistic' ),
 				'pattern' => '<li class="social-instagram"><a title="Instagram" href="%s" %s><i class="icon icon-instagram"></i></a></li>',
 			),			
 			'vimeo' => array(
-				'label'	  => __( 'Vimeo URI', 'realistic' ),
+				'label'	  => __( 'Vimeo URI', 'modrealistic' ),
 				'pattern' => '<li class="social-vimeo"><a title="Vimeo" href="%s" %s><i class="icon icon-vimeo-squared"></i></a></li>',
 			),
 			'foursquare' => array(
-				'label'	  => __( 'FourSquare URI', 'realistic' ),
+				'label'	  => __( 'FourSquare URI', 'modrealistic' ),
 				'pattern' => '<li class="social-foursquare"><a title="FourSquare" href="%s" %s><i class="icon icon-foursquare"></i></a></li>',
 			),	
 			'soundcloud' => array(
-				'label'	  => __( 'Soundcloud URI', 'realistic' ),
+				'label'	  => __( 'Soundcloud URI', 'modrealistic' ),
 				'pattern' => '<li class="social-soundcloud"><a title="LinkedIn" href="%s" %s><i class="icon icon-soundcloud"></i></a></li>',
 			),						
 			'github' => array(
-				'label'	  => __( 'GitHub URI', 'realistic' ),
+				'label'	  => __( 'GitHub URI', 'modrealistic' ),
 				'pattern' => '<li class="social-github"><a title="GitHub" href="%s" %s><i class="icon icon-github"></i></a></li>',
 			),
 			'flickr' => array(
-				'label'	  => __( 'Flickr URI', 'realistic' ),
+				'label'	  => __( 'Flickr URI', 'modrealistic' ),
 				'pattern' => '<li class="social-flickr"><a title="Flickr" href="%s" %s><i class="icon icon-flickr"></i></a></li>',
 			),			
 			'skype' => array(
-				'label'	  => __( 'Skype URI', 'realistic' ),
+				'label'	  => __( 'Skype URI', 'modrealistic' ),
 				'pattern' => '<li class="social-skype"><a title="LinkedIn" href="%s" %s><i class="icon icon-skype"></i></a></li>',
 			),						
 					
 			'behance' => array(
-				'label'	  => __( 'Behance URI', 'realistic' ),
+				'label'	  => __( 'Behance URI', 'modrealistic' ),
 				'pattern' => '<li class="social-behance"><a title="Behance" href="%s" %s><i class="icon icon-behance"></i></a></li>',
 			),
 			'dribbble' => array(
-				'label'	  => __( 'Dribbble URI', 'realistic' ),
+				'label'	  => __( 'Dribbble URI', 'modrealistic' ),
 				'pattern' => '<li class="social-dribbble"><a title="Dribbble" href="%s" %s><i class="icon icon-dribbble"></i></a></li>',
 			),
 			'dropbox' => array(
-				'label'	  => __( 'Dropbox URI', 'realistic' ),
+				'label'	  => __( 'Dropbox URI', 'modrealistic' ),
 				'pattern' => '<li class="social-dropbox"><a title="GitHub" href="%s" %s><i class="icon icon-dropbox"></i></a></li>',
 			),
 			'email' => array(
-				'label'	  => __( 'Email URI', 'realistic' ),
+				'label'	  => __( 'Email URI', 'modrealistic' ),
 				'pattern' => '<li class="social-email"><a title="Email" href="%s" %s><i class="icon icon-mail"></i></a></li>',
 			),
 		);
 
 		$widget_ops = array(
 			'classname'	 => 'realistic_social_icons_widget',
-			'description' => __( 'Show social profile icons.', 'realistic' ),
+			'description' => __( 'Show social profile icons.', 'modrealistic' ),
 		);
 		$control_ops = array(
 			'id_base' => 'social-icons',
@@ -143,7 +143,7 @@ class realistic_social_icons_widget extends WP_Widget {
 			#'height'  => 350,
 		);
 
-		parent::__construct ( 'social-icons', __( 'ModRealistic: Social Icons', 'realistic' ), $widget_ops, $control_ops );
+		parent::__construct ( 'social-icons', __( 'ModRealistic: Social Icons', 'modrealistic' ), $widget_ops, $control_ops );
 
 	}
 
@@ -153,9 +153,9 @@ class realistic_social_icons_widget extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $this->defaults );
 		?>
 
-		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'realistic' ); ?></label> <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $instance['title'] ); ?>" /></p>
+		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'modrealistic' ); ?></label> <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $instance['title'] ); ?>" /></p>
 
-		<p><label><input id="<?php echo $this->get_field_id( 'new_tab' ); ?>" type="checkbox" name="<?php echo $this->get_field_name( 'new_tab' ); ?>" value="1" <?php checked( 1, $instance['new_tab'] ); ?>/> <?php esc_html_e( 'Open links in a new tab?', 'realistic' ); ?></label></p>
+		<p><label><input id="<?php echo $this->get_field_id( 'new_tab' ); ?>" type="checkbox" name="<?php echo $this->get_field_name( 'new_tab' ); ?>" value="1" <?php checked( 1, $instance['new_tab'] ); ?>/> <?php esc_html_e( 'Open links in a new tab?', 'modrealistic' ); ?></label></p>
 
 		<hr style="background: #ccc; border: 0; height: 1px; margin: 20px 0;" />
 

@@ -13,7 +13,7 @@
 		function material_setup() {
 
 			// Make theme available for translation.
-			load_theme_textdomain( 'realistic', get_template_directory() . '/languages' );
+			load_theme_textdomain( 'modrealistic', get_template_directory() . '/languages' );
 			
 			// Add default posts and comments RSS feed links to head.
 			add_theme_support( 'automatic-feed-links' );
@@ -23,8 +23,8 @@
 			
 			// This theme uses wp_nav_menu() in one location.
 			register_nav_menus( array(
-			'primary' => __( 'Primary Menu', 'realistic' ),
-			'mobile-menu' => __( 'Mobile Menu', 'realistic' )
+			'primary' => __( 'Primary Menu', 'modrealistic' ),
+			'mobile-menu' => __( 'Mobile Menu', 'modrealistic' )
 			) );
 			
 			// Switch default core markup for search form, comment form, and comments to output valid HTML5.
@@ -64,7 +64,7 @@
 	function material_widgets_init() {
 
 		register_sidebar( array(
-			'name'          => __( 'Main Sidebar', 'realistic' ),
+			'name'          => __( 'Main Sidebar', 'modrealistic' ),
 			'id'            => 'sidebar',
 			'description'   => 'Main Sidebar widget area.',
 			'before_widget' => '<aside id="%1$s" class="widget sidebar-widget mdl-card mdl-shadow--2dp mdl-grid mdl-cell mdl-cell--12-col %2$s">',
@@ -395,7 +395,7 @@
 					echo '<span class="theauthor"><i class="icon icon-user"></i>'. realistic_entry_author() .'</span>';
 					echo '<span class="posted">'. realistic_posted() .'</span>';
 					echo '<span class="comments"><i class="icon icon-comment"></i>'. realistic_entry_comments() .'</span>';
-					_e(' in ', 'realistic');
+					_e(' in ', 'modrealistic');
 					$category = get_the_category( $post_id );
 					if( !empty( $category[0] ) ) {
 						echo '<span class="category"><a class="mdl-button mdl-js-button" href="' . get_category_link( $category[0]->term_id ) . '" title="' . sprintf( __( "View all posts in %s", "realistic" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a></span>';
@@ -551,9 +551,9 @@
 			$next_prev_post = get_theme_mod( 'next_prev_post', '1' );
 			if ( $next_prev_post ) {  ?>
 				<div class="next_prev_post mdl-grid mdl-cell mdl-cell--12-col">
-					<?php previous_post_link( '<div class="left-button">'.__('%link','realistic').'</div>', __('Previous Post','realistic') );
+					<?php previous_post_link( '<div class="left-button">'.__('%link','modrealistic').'</div>', __('Previous Post','modrealistic') );
 					echo '<div class="mdl-layout-spacer"></div>';	
-					next_post_link( '<div class="right-button">'.__('%link','realistic').'</div>', __('Next Post','realistic') ); ?>
+					next_post_link( '<div class="right-button">'.__('%link','modrealistic').'</div>', __('Next Post','modrealistic') ); ?>
 				</div><!-- .next_prev_post -->
 			<?php }
 		}                 
@@ -571,7 +571,7 @@
 						</div>
 						<div class="author-box-content mdl-cell--9-col-desktop mdl-cell--5-col-tablet mdl-cell--2-col-phone">
 							<div class="author">
-								<?php _e('Written By:', 'realistic'); ?>
+								<?php _e('Written By:', 'modrealistic'); ?>
 								<div class="vcard clearfix">
 									<?php if( get_the_author_link() ) { ?>
 										<a href="<?php echo get_the_author_meta( 'user_url' ); ?>" rel="nofollow" class="fn"><strong><?php the_author_meta( 'nickname' ); ?></strong></a>
@@ -626,23 +626,23 @@
                 <?php echo get_avatar( $comment->comment_author_email, 80 ); ?>
 				<?php global $post;
 				if( $comment->user_id === $post->post_author ) {
-					printf(__('<span class="fn">%s</span><span class="commenter_is_author">Author</span>', 'realistic'), get_comment_author_link());
+					printf(__('<span class="fn">%s</span><span class="commenter_is_author">Author</span>', 'modrealistic'), get_comment_author_link());
 				} else {
-					printf(__('<span class="fn">%s</span>', 'realistic'), get_comment_author_link());
+					printf(__('<span class="fn">%s</span>', 'modrealistic'), get_comment_author_link());
 				} ?> 
                 
 				<span class="ago"><?php comment_date(get_option( 'date_format' )); ?></span>
                 
                 <span class="comment-meta">
-                    <?php edit_comment_link(__('(Edit)', 'realistic'),'  ',''); ?>
+                    <?php edit_comment_link(__('(Edit)', 'modrealistic'),'  ',''); ?>
                     <?php
-						$args['reply_text'] = '<i class="fa fa-mail-forward"></i> '. __('Reply', 'realistic');
+						$args['reply_text'] = '<i class="fa fa-mail-forward"></i> '. __('Reply', 'modrealistic');
 						comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth'])));
 					?>
 				</span>
 			</div>
             <?php if ($comment->comment_approved == '0') : ?>
-			<em><?php _e('Your comment is awaiting moderation.', 'realistic') ?></em>
+			<em><?php _e('Your comment is awaiting moderation.', 'modrealistic') ?></em>
 			<br />
             <?php endif; ?>
             <div class="commentmetadata">
@@ -664,7 +664,7 @@
 						echo $footer_left; ?>
 					</div>
 					<div class="right">
-						<?php _e( 'ModRealistic theme by <a href="http://themient.com">Themient</a>', 'realistic' );?>
+						<?php _e( 'ModRealistic theme by <a href="http://themient.com">Themient</a>', 'modrealistic' );?>
 					</div>
 				</div>
 			<?php
