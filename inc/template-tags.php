@@ -94,6 +94,26 @@ if ( ! function_exists( 'realistic_posted' ) ) {
 	}
 }
 
+if ( ! function_exists( 'modrealistic_posted_on' ) ) :
+/**
+ * Print HTML with meta information for the current post-date/time and author.
+ *
+ * Create your own twentyeleven_posted_on to override in a child theme
+ *
+ * @since Twenty Eleven 1.0
+ */
+function modrealistic_posted_on() {
+	printf( __( '<span class="posted">Posted on </span> <time class="entry-date" title="%1$s" datetime="%2$s">%3$s</time> <span class="by-author"> <span class="posted"> by </span> <span class="author vcard"><a class="url fn" href="%4$s" title="%5$s" rel="author">%6$s</a></span></span>', 'modrealistic' ),
+		esc_attr( get_the_time() ),
+		esc_attr( get_the_date( 'c' ) ),
+		esc_html( get_the_date() ),
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		esc_attr( sprintf( __( 'View all posts by %s', 'modrealistic' ), get_the_author() ) ),
+		get_the_author()
+	);
+}
+endif;
+
 // Prints HTML with meta information for Author.
 if ( ! function_exists( 'realistic_entry_author' ) ) :
 function realistic_entry_author() {
@@ -147,6 +167,22 @@ function realistic_entry_comments() {
 		}
 		return $write_comments;
 	}
+}
+endif;
+
+if ( ! function_exists( 'modrealistic_leave_comments' ) ) :
+/**
+ * Prints HTML with meta information for the current post-date/time and author.
+ */
+function modrealistic_leave_comments() {
+
+	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		echo '<span class="comments-link"> ';
+		$css_class = 'mdl-button mdl-js-button';
+		comments_popup_link( sprintf( __( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'modrealistic' ), get_the_title() ), false, false, $css_class );
+		echo '</span>';
+	}
+
 }
 endif;
 

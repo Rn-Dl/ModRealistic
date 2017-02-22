@@ -1,6 +1,6 @@
 /*
 	Theme Name: ModRealistic
-	Theme URI: https://github.com/Rn-Dl/Realistic
+	Theme URI: https://github.com/p0gr0mist/Realistic
 	Author: Asmi Khalil
 	Author URI: http://themient.com
 	Description: ModRealistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. ModRealistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides ModRealistic is highly customizable and speed optimized.
@@ -246,7 +246,6 @@ h1, h2, h3, h4, h5, h6 {
 .site-title a {
 	color: #FFF;
 	text-decoration: none;
-    text-transform: uppercase;
 }
 .post-title a {
 	color: #303030;
@@ -858,7 +857,6 @@ input, textarea {
 	margin: 8px;
 }
 .tagcloud a, #tags-tab-content a {
-	font-size: 15px!important;
 	padding: 7px 13px;
 	margin-bottom: 7px;
 	float: left;
@@ -1327,3 +1325,37 @@ embed, iframe, object {
 		text-align: center;
 	}
 }
+
+/*---------------------------------------------
+13 Custom CSS
+/*-------------------------------------------*/
+
+.mdlmod-cell {
+	margin: 20px;
+	width: calc(100% - 16px);
+	box-sizing: border-box;
+}
+.mdlmod2-cell {
+	padding: 20px;
+}
+.entry-footer {
+	display: block;
+}
+.entry-footer .comments-link  {
+	margin: 0px;
+	display: inline-block;
+	float: left;
+}
+.comments-link a {
+	color: #F44336;
+	text-decoration: none;
+	text-transform: none;
+	font-size: 16px;
+	font-weight: 500;
+}
+.comments-link > .mdl-button:hover {
+    background-color: rgba(244,67,54,.2)}
+.comments-link > .mdl-button:focus: not(:active) {
+    background-color: rgba(0,0,0,.12)}
+.comments-link > .mdl-button:active {
+    background-color: rgba(244,67,54,.4)}

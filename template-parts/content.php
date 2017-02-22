@@ -10,14 +10,7 @@
 		<?php if ( is_sticky() ) {
 			echo '<div class="featured"><i class="icon icon-star"></i></div>';
 		} ?>	
-		<div class="post-img mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">		
-				<img width="218" height="181" src="<?php echo realistic_get_thumbnail( 'featured' ); ?>" class="attachment-featured wp-post-image" alt="<?php the_title_attribute(); ?>">
-				<?php $format = get_post_format( $post->ID );
-				realistic_post_format_icon( $format ); ?>
-			</a>
-		</div>
-		<div class="post-data  mdl-cell mdl-cell--8-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+		<div class="post-data mdlmod-cell mdl-cell--4-col-tablet mdl-cell--4-col-phone">
 		
 			<?php if ( current_user_can( 'edit_posts' ) ) { ?>
 				<button id="post-actions<?php the_ID(); ?>" class="post-actions mdl-button mdl-js-button mdl-button--icon">
@@ -35,15 +28,18 @@
 	
 			the_title( sprintf( '<h2 class="entry-title post-title mdl-card__title-text"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 			
-			<?php realistic_archives_meta( $post->ID ); ?>
-			<div class="entry-content post-excerpt">
-				<?php /* translators: %s: Name of current post */ ?>
-				<span class="mdl-typography--font-light mdl-typography--subhead">
-					<?php archives_excerpt(); ?>
-				</span>
+			<?php realistic_archives_meta(); ?>
+			<div class="entry-content">
+				<?php
+					/* translators: %s: Name of current post */
+					the_content( sprintf(
+						__( 'Read more %s <span class="meta-nav">&rarr;</span>', 'modrealistic' ),
+						the_title( '<span class="screen-reader-text">"', '"</span>', false )
+					) );
+				?>
 			</div><!-- .entry-content -->
-			<div class="moretag">
-				<a class="mdl-button mdl-js-button" href="<?php the_permalink(); ?>"><?php _e( 'View article...', 'modrealistic' ); ?></a>
-			</div>
+			<div class="entry-footer">
+				<?php modrealistic_leave_comments(); ?>
+			</div><!-- .entry-footer -->
 		</div><!-- .post-data -->
 	</article><!-- #post-## -->

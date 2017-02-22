@@ -387,19 +387,13 @@
 
 	//Display meta info if enabled.
 	if ( ! function_exists( 'realistic_archives_meta' ) ) {
-		function realistic_archives_meta( $post_id ) {
+		function realistic_archives_meta() {
 			$archives_meta = get_theme_mod( 'archives_post_meta', '1' );
 			if ( $archives_meta ) { ?>
 				<div class="entry-meta post-info">
 				<?php 
-					echo '<span class="theauthor"><i class="icon icon-user"></i>'. realistic_entry_author() .'</span>';
-					echo '<span class="posted">'. realistic_posted() .'</span>';
-					echo '<span class="comments"><i class="icon icon-comment"></i>'. realistic_entry_comments() .'</span>';
-					_e(' in ', 'modrealistic');
-					$category = get_the_category( $post_id );
-					if( !empty( $category[0] ) ) {
-						echo '<span class="category"><a class="mdl-button mdl-js-button" href="' . get_category_link( $category[0]->term_id ) . '" title="' . sprintf( __( "View all posts in %s", "realistic" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a></span>';
-					} ?>
+					modrealistic_posted_on();
+				?>
 				</div><!-- .entry-meta -->
 			<?php }                                    
 		}
@@ -426,11 +420,10 @@
 			if ( $post_meta ) { ?>
 				<div class="entry-meta post-info">
 				<?php 
-					echo '<span class="theauthor"><i class="icon icon-user"></i>'. realistic_entry_author() .'</span>';
-					echo '<span class="posted">'. realistic_posted() .'</span>';
-					echo '<span class="comments"><i class="icon icon-comment"></i>'. realistic_entry_comments() .' comments</span>';
-					echo realistic_entry_tags();
-				?>
+					modrealistic_posted_on();			
+					echo '<br><div class="comment-counter icon material-icons mdl-badge" data-badge="'. realistic_entry_comments() .'">comment</div>';
+					_e('Tagged: ', 'modrealistic');
+					realistic_entry_tags(); ?>
 				</div><!-- .entry-meta -->
 			<?php }                                    
 		}
@@ -466,21 +459,15 @@
 								<?php while( $my_query->have_posts() ) {
 								$my_query->the_post(); ?>
 								<div class="related-item mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-										<div class="relatedthumb">
-											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-												<img width="120" height="120" src="<?php echo realistic_get_thumbnail( 'small' ); ?>" class="attachment-featured wp-post-image" alt="<?php the_title_attribute(); ?>">
-												<?php $format = get_post_format( $post->ID );
-												realistic_post_format_icon( $format ); ?>
-											</a>
-										</div>
 										<div class="post-data-container">
 											<h4>
 												<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 											</h4>
 											<div class="post-info">
 												<div class="meta-info">
-													<?php echo '<span class="posted">'. realistic_posted() .'</span>';
-													echo '<span class="comments"><i class="icon icon-comment"></i>'. realistic_entry_comments() .'</span>'; ?>
+													<?php 
+														modrealistic_posted_on();
+													?>
 												</div>
 											</div>
 										</div>
@@ -515,21 +502,15 @@
 								<?php while( $my_query->have_posts() ) {
 								$my_query->the_post(); ?>
 								<div class="related-item mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-										<div class="relatedthumb">
-											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-												<img width="120" height="120" src="<?php echo realistic_get_thumbnail( 'small' ); ?>" class="attachment-featured wp-post-image" alt="<?php the_title_attribute(); ?>">
-												<?php $format = get_post_format( $post->ID );
-												realistic_post_format_icon( $format ); ?>
-											</a>
-										</div>
 										<div class="post-data-container">
 											<h4>
 												<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 											</h4>
 											<div class="post-info">
 												<div class="meta-info">
-													<?php echo '<span class="posted">'. realistic_posted() .'</span>';
-													echo '<span class="comments"><i class="icon icon-comment"></i>'. realistic_entry_comments() .'</span>'; ?>
+													<?php 
+														modrealistic_posted_on();
+													?>
 												</div>
 											</div>
 										</div>
