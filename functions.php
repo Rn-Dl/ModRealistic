@@ -325,14 +325,9 @@
 		function realistic_breadcrumb() {
 			echo '<div typeof="v:Breadcrumb" class="root"><a rel="v:url" property="v:title" href="';
 			echo home_url();
-			echo '">'.sprintf( __( "Home","realistic"));
+			echo '">'.sprintf( __( "Home","modrealistic"));
 			echo '</a></div><div>></div>';
 			if (is_category() || is_single()) {
-				$categories = get_the_category();
-				$output = '';
-				if($categories){
-					echo '<div typeof="v:Breadcrumb"><a href="'.get_category_link( $categories[0]->term_id ).'" rel="v:url" property="v:title">'.$categories[0]->cat_name.'</a></div><div>></div>';
-				}
 				if (is_single()) {
 					echo "<div typeof='v:Breadcrumb'><span property='v:title'>";
 					the_title();
@@ -454,7 +449,7 @@
 						);
 						$my_query = new wp_query( $args );
 						if( $my_query->have_posts() ) { ?>
-							<h3 class="section-title margin-8"><?php _e("Related Posts", "realistic") ?></h3>
+							<h3 class="section-title margin-8"><?php _e("Related Posts", "modrealistic") ?></h3>
 							<div id="related_posts" class="related-posts mdl-grid mdl-cell mdl-cell--12-col">
 								<?php while( $my_query->have_posts() ) {
 								$my_query->the_post(); ?>
@@ -497,7 +492,7 @@
 						);
 						$my_query = new wp_query( $args );
 						if( $my_query->have_posts() ) { ?>
-							<h3 class="section-title margin-8"><?php _e("Related Posts", "realistic") ?></h3>
+							<h3 class="section-title margin-8"><?php _e("Related Posts", "modrealistic") ?></h3>
 							<div id="related_posts" class="related-posts mdl-grid mdl-cell mdl-cell--12-col">
 								<?php while( $my_query->have_posts() ) {
 								$my_query->the_post(); ?>
@@ -645,7 +640,7 @@
 						echo $footer_left; ?>
 					</div>
 					<div class="right">
-						<?php _e( 'ModRealistic theme by <a href="http://themient.com">Themient</a>', 'modrealistic' );?>
+						<?php _e( 'ModRealistic theme by <a href="https://pogromist.io">Pogromist</a>', 'modrealistic' );?>
 					</div>
 				</div>
 			<?php

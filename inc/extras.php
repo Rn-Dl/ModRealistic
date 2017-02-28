@@ -69,3 +69,12 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	}
 	add_action( 'wp_head', 'realistic_render_title' );
 endif;
+
+/**
+ * Custom Read More Button
+ */
+function modify_read_more_link() {
+
+	return '<div class="moretag"><a class="mdl-button mdl-js-button" href="' . get_permalink() . '">'.__( 'Read more', 'modrealistic' ).'</a></div>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );

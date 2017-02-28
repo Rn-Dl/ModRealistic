@@ -1,13 +1,13 @@
 /*
 	Theme Name: ModRealistic
-	Theme URI: https://github.com/p0gr0mist/Realistic
+	Theme URI: https://github.com/p0gr0mist/ModRealistic
 	Author: Asmi Khalil
 	Author URI: http://themient.com
 	Description: ModRealistic is the first WordPress theme built using Underscores and Google's Material Design Lite (MDL) frameworks combined together. ModRealistic will give your site a very Modern & realistic look and amaze you (and your users) with smooth transitions and fluid animations just like Google's websites. Besides ModRealistic is highly customizable and speed optimized.
 	Version: 1.2.3
 	License: GNU General Public License v3 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
-	Text Domain: realistic
+	Text Domain: modrealistic
 	Tags: two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments, translation-ready
 
 	This theme, like WordPress, is licensed under the GPL.
@@ -123,9 +123,10 @@ img {
 }
 .moretag {
 	float: right;
-	margin-top: 10px;
+	margin: 0px 10px;
 }
 .moretag a {
+	color: blue;
 	text-decoration: none;
 	text-transform: none;
 }
@@ -879,8 +880,8 @@ input, textarea {
 
 .breadcrumb {
 	clear: both;
-	padding: 10px 0;
-	font: italic 14px Georgia,serif;
+	padding: 10px 0 0 0;
+	font: 14px Georgia,serif;
 }
 .breadcrumb >div {
 	padding: 0 5px;
@@ -903,14 +904,14 @@ input, textarea {
 }
 .post-info > span {
 	display: inline-block;
-	margin-right: 15px;
+	margin-right: 0px;
 	color: #949494;
 }
 .post-info .category a {
 	font-size: 0.9em;
 }
 .single .post {
-	padding: 20px 30px 30px 20px;
+	padding: 10px 30px 10px 20px;
 	margin-bottom: 30px;
 }
 .single .post-title {
@@ -918,6 +919,7 @@ input, textarea {
 	line-height: 1.4em;
 }
 .single .post-info {
+	position: relative;
 	margin-bottom: 15px;
 }
 
@@ -946,9 +948,11 @@ input, textarea {
 	margin-right: 2%;
 }
 .post-data-container {
-	padding: 0;
 	display: inline-block;
-	width: 65%;
+	width: calc(100% - 10px);
+	padding-left: 5px;
+	padding-right: 5px;
+
 }
 .related-item h4 {
 	font-size: 17px;
@@ -961,7 +965,7 @@ input, textarea {
   font-size: 14px;
 }
 .related-item .meta-info > span {
-	margin-right: 10px;
+	margin-right: 0px;
 }
 .right-button {
 	text-align: right;
@@ -1270,6 +1274,8 @@ embed, iframe, object {
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
+	margin-right: auto;
+	margin-left: autp;
 }
 .gallery-columns-2 .gallery-item {
 	max-width: 50%;
@@ -1358,4 +1364,18 @@ embed, iframe, object {
 .comments-link > .mdl-button:focus: not(:active) {
     background-color: rgba(0,0,0,.12)}
 .comments-link > .mdl-button:active {
-    background-color: rgba(244,67,54,.4)}
+    background-color: rgba(244,67,54,.4)
+}
+.mdl-badge[data-badge]:after {
+	color: white;
+}
+.entry-meta {
+	font-style: italic;
+	padding: 0px 50px 0px 0px;
+}
+.entry-date {
+	font-weight: bold;
+}
+.author a {
+	font-weight: bold;
+}
