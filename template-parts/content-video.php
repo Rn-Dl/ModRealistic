@@ -35,7 +35,7 @@
 				</span>
 			</div><!-- .entry-content -->
 			<div class="moretag">
-				<a class="mdl-button mdl-js-button" href="<?php the_permalink(); ?>"><?php _e( 'View article...', 'modrealistic' ); ?></a>
+				<a class="mdl-button mdl-js-button" href="<?php the_permalink(); ?>"><?php _e( 'Read more', 'modrealistic' ); ?></a>
 			</div>
 		</div><!-- .post-data -->
 	</article><!-- #post-## -->

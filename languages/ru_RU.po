@@ -1,841 +1,42 @@
-# Copyright (C) 2017 Pogromist.io
-# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: ModRealistic\n"
 "POT-Creation-Date: 2017-02-28 23:01+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: 2017-02-28 23:04+0000\n"
+"Last-Translator: admin <admin@local.dev>\n"
+"Language-Team: Russian\n"
+"Language: ru-RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
-
-#: functions.php:26
-msgid "Primary Menu"
-msgstr ""
-
-#: functions.php:27
-msgid "Mobile Menu"
-msgstr ""
-
-#: functions.php:67
-msgid "Main Sidebar"
-msgstr ""
-
-#: functions.php:328
-msgid "Home"
-msgstr ""
-
-#: functions.php:420
-msgid "Tagged: "
-msgstr ""
-
-#: functions.php:452 functions.php:495 inc/customizer.php:226
-msgid "Related Posts"
-msgstr ""
-
-#: functions.php:530 functions.php:532
-msgid "%link"
-msgstr ""
-
-#: functions.php:530
-msgid "Previous Post"
-msgstr ""
-
-#: functions.php:532
-msgid "Next Post"
-msgstr ""
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Report-Msgid-Bugs-To: "
 
 #: functions.php:550
 msgid "Written By:"
-msgstr ""
-
-#: functions.php:605
-#, php-format
-msgid ""
-"<span class=\"fn\">%s</span><span class=\"commenter_is_author\">Author</span>"
-msgstr ""
-
-#: functions.php:607
-#, php-format
-msgid "<span class=\"fn\">%s</span>"
-msgstr ""
-
-#: functions.php:613
-msgid "(Edit)"
-msgstr ""
-
-#: functions.php:615
-msgid "Reply"
-msgstr ""
-
-#: functions.php:621
-msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Написано:"
 
 #: functions.php:643
 msgid "ModRealistic theme by <a href=\"https://pogromist.io\">Pogromist</a>"
-msgstr ""
-
-#: searchform.php:11
-msgid "Search for"
-msgstr ""
-
-#: searchform.php:12
-msgid "Search &#8230;"
-msgstr ""
+msgstr "ModRealistic theme by <a href=\"https://pogromist.io\">Pogromist</a>"
 
 #. Name of the template
 msgid "Full Width"
-msgstr ""
-
-#: comments.php:18
-msgid "This post is password protected. Enter the password to view comments."
-msgstr ""
-
-#: comments.php:28
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: comments.php:56
-msgid "Add a Comment"
-msgstr ""
-
-#: comments.php:58
-msgid "Add Comment"
-msgstr ""
-
-#: comments.php:63 comments.php:64
-msgid "Name"
-msgstr ""
-
-#: comments.php:65 comments.php:66
-msgid "Email"
-msgstr ""
-
-#: comments.php:67 comments.php:68
-msgid "Website"
-msgstr ""
-
-#: search.php:16
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
-
-#: search.php:35 archive.php:41 index.php:35
-msgid "&#8249; Previous"
-msgstr ""
-
-#: search.php:36 archive.php:42 index.php:36
-msgid "Next &#8250;"
-msgstr ""
-
-#: 404.php:15
-msgid "Oops! That page can&rsquo;t be found."
-msgstr ""
-
-#: 404.php:19
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
-msgstr ""
-
-#: 404.php:27
-msgid "Most Used Categories"
-msgstr ""
-
-#. %1$s: smiley
-#: 404.php:44
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr ""
-
-#: header.php:38 header.php:65
-msgid "Add Menu"
-msgstr ""
-
-#: header.php:40 header.php:67
-msgid "Go to Appearance => Menus and assign a Menu to this location."
-msgstr ""
-
-#: inc/customizer.php:20
-msgid "General Settings"
-msgstr ""
-
-#: inc/customizer.php:49
-msgid "Copyright Text"
-msgstr ""
-
-#: inc/customizer.php:72
-msgid "Logo Image"
-msgstr ""
-
-#: inc/customizer.php:82
-msgid "Archives Settings"
-msgstr ""
-
-#: inc/customizer.php:149
-msgid "Archives Meta"
-msgstr ""
-
-#: inc/customizer.php:181
-msgid "Excerpt Length"
-msgstr ""
-
-#: inc/customizer.php:192
-msgid "Article Settings"
-msgstr ""
-
-#: inc/customizer.php:208
-msgid "Post Meta"
-msgstr ""
-
-#: inc/customizer.php:241
-msgid "Related Posts Number"
-msgstr ""
-
-#: inc/customizer.php:259
-msgid "Related Posts Query"
-msgstr ""
-
-#: inc/customizer.php:262
-msgid "Tags"
-msgstr ""
-
-#: inc/customizer.php:263
-msgid "Categories"
-msgstr ""
-
-#: inc/customizer.php:280
-msgid "Next/Prev Article"
-msgstr ""
-
-#: inc/customizer.php:298
-msgid "Post Author Box"
-msgstr ""
-
-#: inc/customizer.php:308
-msgid "Design & Layout"
-msgstr ""
-
-#: inc/customizer.php:325
-msgid "Sidebar Settings"
-msgstr ""
-
-#: inc/customizer.php:348
-msgid "Color Scheme"
-msgstr ""
-
-#: inc/customizer.php:374
-msgid "Background settings"
-msgstr ""
-
-#: inc/customizer.php:377
-msgid "Color"
-msgstr ""
-
-#: inc/customizer.php:378
-msgid "Pattern"
-msgstr ""
-
-#: inc/customizer.php:379
-msgid "Custom image"
-msgstr ""
-
-#: inc/customizer.php:398
-msgid "Background color"
-msgstr ""
-
-#: inc/customizer.php:418
-msgid "Background pattern"
-msgstr ""
-
-#: inc/customizer.php:479
-msgid "Custom background image"
-msgstr ""
-
-#: inc/customizer.php:496 inc/customizer.php:499 inc/customizer.php:646
-msgid "Repeat"
-msgstr ""
-
-#: inc/customizer.php:500 inc/customizer.php:647
-msgid "Repeat-x"
-msgstr ""
-
-#: inc/customizer.php:501 inc/customizer.php:648
-msgid "Repeat-y"
-msgstr ""
-
-#: inc/customizer.php:502 inc/customizer.php:649
-msgid "No-repeat"
-msgstr ""
-
-#: inc/customizer.php:517
-msgid "Attachment"
-msgstr ""
-
-#: inc/customizer.php:520 inc/customizer.php:662
-msgid "Scroll"
-msgstr ""
-
-#: inc/customizer.php:521 inc/customizer.php:663
-msgid "Fixed"
-msgstr ""
-
-#: inc/customizer.php:536
-msgid "Position"
-msgstr ""
-
-#: inc/customizer.php:539 inc/customizer.php:676
-msgid "Left top"
-msgstr ""
-
-#: inc/customizer.php:540 inc/customizer.php:677
-msgid "Left center"
-msgstr ""
-
-#: inc/customizer.php:541 inc/customizer.php:678
-msgid "Left bottom"
-msgstr ""
-
-#: inc/customizer.php:542 inc/customizer.php:679
-msgid "Right top"
-msgstr ""
-
-#: inc/customizer.php:543 inc/customizer.php:680
-msgid "Right center"
-msgstr ""
-
-#: inc/customizer.php:544 inc/customizer.php:681
-msgid "Right bottom"
-msgstr ""
-
-#: inc/customizer.php:545 inc/customizer.php:682
-msgid "Center top"
-msgstr ""
-
-#: inc/customizer.php:546 inc/customizer.php:683
-msgid "Center center"
-msgstr ""
-
-#: inc/customizer.php:547 inc/customizer.php:684
-msgid "Center bottom"
-msgstr ""
-
-#: inc/customizer.php:563
-msgid "Custom CSS"
-msgstr ""
-
-#: inc/extras.php:52
-#, php-format
-msgid "Page %s"
-msgstr ""
-
-#. %s: Name of current post
-#: inc/extras.php:78 template-parts/content-video.php:38
-msgid "Read more"
-msgstr ""
-
-#: inc/template-tags.php:23
-msgid "year"
-msgstr ""
-
-#: inc/template-tags.php:23
-msgid "years"
-msgstr ""
-
-#: inc/template-tags.php:24
-msgid "month"
-msgstr ""
-
-#: inc/template-tags.php:24
-msgid "months"
-msgstr ""
-
-#: inc/template-tags.php:25
-msgid "week"
-msgstr ""
-
-#: inc/template-tags.php:25
-msgid "weeks"
-msgstr ""
-
-#: inc/template-tags.php:26
-msgid "day"
-msgstr ""
-
-#: inc/template-tags.php:26
-msgid "days"
-msgstr ""
-
-#: inc/template-tags.php:27
-msgid "hour"
-msgstr ""
-
-#: inc/template-tags.php:27
-msgid "hours"
-msgstr ""
-
-#: inc/template-tags.php:28
-msgid "minute"
-msgstr ""
-
-#: inc/template-tags.php:28
-msgid "minutes"
-msgstr ""
-
-#: inc/template-tags.php:29
-msgid "second"
-msgstr ""
-
-#: inc/template-tags.php:29 inc/template-tags.php:62
-msgid "seconds"
-msgstr ""
-
-#: inc/template-tags.php:46
-msgid "sometime"
-msgstr ""
-
-#: inc/template-tags.php:65
-msgid " ago"
-msgstr ""
-
-#: inc/template-tags.php:85
-#, php-format
-msgctxt "post date"
-msgid "%s"
-msgstr ""
-
-#: inc/template-tags.php:106
-#, php-format
-msgid ""
-"<span class=\"posted\">Posted on </span> <time class=\"entry-date\" "
-"title=\"%1$s\" datetime=\"%2$s\">%3$s</time> <span class=\"by-author\"> "
-"<span class=\"posted\"> by </span> <span class=\"author vcard\"><a "
-"class=\"url fn\" href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span>"
-"</span>"
-msgstr ""
-
-#: inc/template-tags.php:111
-#, php-format
-msgid "View all posts by %s"
-msgstr ""
-
-#: inc/template-tags.php:122
-#, php-format
-msgctxt "post author"
-msgid "%s"
-msgstr ""
-
-#: inc/template-tags.php:138 inc/template-tags.php:152
-#, php-format
-msgid "%1$s"
-msgstr ""
-
-#. used between list items, there is a space after the comma
-#: inc/template-tags.php:150
-msgid ", "
-msgstr ""
-
-#: inc/template-tags.php:182
-#, php-format
-msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
-
-#: inc/template-tags.php:202
-#, php-format
-msgid "Category: %s"
-msgstr ""
-
-#: inc/template-tags.php:204
-#, php-format
-msgid "Tag: %s"
-msgstr ""
-
-#: inc/template-tags.php:206
-#, php-format
-msgid "Author: %s"
-msgstr ""
-
-#: inc/template-tags.php:208
-#, php-format
-msgid "Year: %s"
-msgstr ""
-
-#: inc/template-tags.php:208
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
-#: inc/template-tags.php:210
-#, php-format
-msgid "Month: %s"
-msgstr ""
-
-#: inc/template-tags.php:210
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
-#: inc/template-tags.php:212
-#, php-format
-msgid "Day: %s"
-msgstr ""
-
-#: inc/template-tags.php:212
-msgctxt "daily archives date format"
-msgid "F j, Y"
-msgstr ""
-
-#: inc/template-tags.php:215
-msgctxt "post format archive title"
-msgid "Asides"
-msgstr ""
-
-#: inc/template-tags.php:217
-msgctxt "post format archive title"
-msgid "Galleries"
-msgstr ""
-
-#: inc/template-tags.php:219
-msgctxt "post format archive title"
-msgid "Images"
-msgstr ""
-
-#: inc/template-tags.php:221
-msgctxt "post format archive title"
-msgid "Videos"
-msgstr ""
-
-#: inc/template-tags.php:223
-msgctxt "post format archive title"
-msgid "Quotes"
-msgstr ""
-
-#: inc/template-tags.php:225
-msgctxt "post format archive title"
-msgid "Links"
-msgstr ""
-
-#: inc/template-tags.php:227
-msgctxt "post format archive title"
-msgid "Statuses"
-msgstr ""
-
-#: inc/template-tags.php:229
-msgctxt "post format archive title"
-msgid "Audio"
-msgstr ""
-
-#: inc/template-tags.php:231
-msgctxt "post format archive title"
-msgid "Chats"
-msgstr ""
-
-#: inc/template-tags.php:234
-#, php-format
-msgid "Archives: %s"
-msgstr ""
-
-#. 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:238
-#, php-format
-msgid "%1$s: %2$s"
-msgstr ""
-
-#: inc/template-tags.php:240
-msgid "Archives"
-msgstr ""
-
-#: template-parts/content-none.php:14
-msgid "Nothing Found"
-msgstr ""
-
-#: template-parts/content-none.php:20
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: template-parts/content-none.php:24
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-
-#: template-parts/content-none.php:29
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
-#: template-parts/content-video.php:20 template-parts/content.php:20
-msgid "Edit"
-msgstr ""
-
-#: template-parts/content-video.php:24 template-parts/content.php:24
-msgid "Delete"
-msgstr ""
-
-#. %s: Name of current post
-#: template-parts/content.php:36
-#, php-format
-msgid "Read more %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: template-parts/content-page.php:19 template-parts/content-single.php:21
-msgid "Pages:"
-msgstr ""
-
-#: functions/widget-socialicons.php:50
-msgid "Facebook URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:54
-msgid "Twitter URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:58
-msgid "Google+ URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:62
-msgid "YouTube URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:66
-msgid "RSS URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:70
-msgid "Pinterest URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:74
-msgid "Linkedin URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:78
-msgid "StumbleUpon URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:82
-msgid "Reddit URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:86
-msgid "Tumblr URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:90
-msgid "Instagram URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:94
-msgid "Vimeo URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:98
-msgid "FourSquare URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:102
-msgid "Soundcloud URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:106
-msgid "GitHub URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:110
-msgid "Flickr URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:114
-msgid "Skype URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:119
-msgid "Behance URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:123
-msgid "Dribbble URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:127
-msgid "Dropbox URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:131
-msgid "Email URI"
-msgstr ""
-
-#: functions/widget-socialicons.php:138
-msgid "Show social profile icons."
-msgstr ""
-
-#: functions/widget-socialicons.php:146
-msgid "ModRealistic: Social Icons"
-msgstr ""
-
-#: functions/widget-socialicons.php:156 functions/widget-recentposts.php:34
-#: functions/widget-popularposts.php:36 functions/widget-login.php:44
-msgid "Title:"
-msgstr ""
-
-#: functions/widget-socialicons.php:158
-msgid "Open links in a new tab?"
-msgstr ""
-
-#: functions/widget-recentposts.php:15
-msgid "ModRealistic: Recent Posts"
-msgstr ""
-
-#: functions/widget-recentposts.php:16
-msgid "Display the most recent posts from all categories."
-msgstr ""
-
-#: functions/widget-recentposts.php:27 functions/widget-recentposts.php:85
-msgid "Recent Posts"
-msgstr ""
-
-#: functions/widget-recentposts.php:39 functions/widget-popularposts.php:47
-msgid "Number of Posts to show"
-msgstr ""
-
-#: functions/widget-recentposts.php:46 functions/widget-popularposts.php:54
-msgid "Show Thumbnails"
-msgstr ""
-
-#: functions/widget-recentposts.php:53 functions/widget-popularposts.php:61
-msgid "Show post date"
-msgstr ""
+msgstr "Full Width"
 
 #: functions/widget-recentposts.php:60 functions/widget-popularposts.php:68
 msgid "Show comments number"
-msgstr ""
-
-#: functions/widget-popularposts.php:15
-msgid "ModRealistic: Popular Posts"
-msgstr ""
-
-#: functions/widget-popularposts.php:16
-msgid "Displays most Popular Posts with Thumbnail."
-msgstr ""
-
-#: functions/widget-popularposts.php:28
-msgid "Popular Posts"
-msgstr ""
-
-#: functions/widget-popularposts.php:41
-msgid "Popular limit (days), 0 for No-limit"
-msgstr ""
-
-#: functions/widget-login.php:16
-msgid "ModRealistic: Login Widget"
-msgstr ""
-
-#: functions/widget-login.php:17
-msgid "Display a login/register form on the sidebar."
-msgstr ""
-
-#: functions/widget-login.php:34 functions/widget-login.php:127
-msgid "Login"
-msgstr ""
-
-#: functions/widget-login.php:51
-msgid "Show Avatar"
-msgstr ""
-
-#: functions/widget-login.php:58
-msgid "Show Logged in User name"
-msgstr ""
-
-#: functions/widget-login.php:65
-msgid "Show Dashboard Link"
-msgstr ""
-
-#: functions/widget-login.php:72
-msgid "Show Profile Link"
-msgstr ""
-
-#: functions/widget-login.php:79
-msgid "Show Remember me"
-msgstr ""
-
-#: functions/widget-login.php:86
-msgid "Show Register Link"
-msgstr ""
-
-#: functions/widget-login.php:93
-msgid "Show Forgotten Password Link"
-msgstr ""
-
-#: functions/widget-login.php:132 functions/widget-login.php:132
-msgid "Welcome"
-msgstr ""
-
-#: functions/widget-login.php:150
-msgid "Enter both Username and Password"
-msgstr ""
-
-#: functions/widget-login.php:153
-msgid "Username is not registered"
-msgstr ""
-
-#: functions/widget-login.php:156
-msgid "Incorrect Password"
-msgstr ""
-
-#: functions/widget-login.php:174
-msgid "Logged in as "
-msgstr ""
-
-#: functions/widget-login.php:180
-msgid "Dashboard"
-msgstr ""
-
-#: functions/widget-login.php:183
-msgid "Profile"
-msgstr ""
-
-#: functions/widget-login.php:185
-msgid "Logout"
-msgstr ""
-
-#: functions/widget-login.php:196
-msgid "Username"
-msgstr ""
-
-#: functions/widget-login.php:197
-msgid "Password"
-msgstr ""
-
-#: functions/widget-login.php:203
-msgid "Register"
-msgstr ""
-
-#: functions/widget-login.php:205
-msgid "Forgot Password?"
-msgstr ""
-
-#: functions/widget-login.php:238
-msgid "<strong>ERROR</strong>: Invalid username or incorrect password."
-msgstr ""
-
-#. Name of the theme
-msgid "ModRealistic"
-msgstr ""
+msgstr "Показать кол-во комментариев"
 
 #. Description of the theme
 msgid ""
@@ -846,15 +47,835 @@ msgid ""
 "like Google's websites. Besides ModRealistic is highly customizable and "
 "speed optimized."
 msgstr ""
+"ModRealistic is the first WordPress theme built using Underscores and "
+"Google's Material Design Lite (MDL) frameworks combined together. "
+"ModRealistic will give your site a very Modern &amp; realistic look and "
+"amaze you (and your users) with smooth transitions and fluid animations just "
+"like Google's websites. Besides ModRealistic is highly customizable and "
+"speed optimized."
 
 #. URI of the theme
 msgid "https://github.com/p0gr0mist/ModRealistic"
-msgstr ""
+msgstr "https://github.com/p0gr0mist/ModRealistic"
 
 #. Author of the theme
 msgid "Vladimir L"
-msgstr ""
+msgstr "Vladimir L"
 
 #. Author URI of the theme
 msgid "https://pogromist.io"
+msgstr "https://pogromist.io"
+
+#: functions.php:26
+msgid "Primary Menu"
+msgstr "Главное меню"
+
+#: functions.php:27
+msgid "Mobile Menu"
+msgstr "Мобильное меню"
+
+#: functions.php:67
+msgid "Main Sidebar"
+msgstr "Основная боковая панель"
+
+#: functions.php:328
+msgid "Home"
+msgstr "Главная"
+
+#: functions.php:420
+msgid "Tagged: "
+msgstr "Метки: "
+
+#: functions.php:452 functions.php:495 inc/customizer.php:226
+msgid "Related Posts"
+msgstr "Смотрите также (похожие записи)"
+
+#: functions.php:530 functions.php:532
+msgid "%link"
+msgstr "%link"
+
+#: functions.php:530
+msgid "Previous Post"
+msgstr "Предыдущий пост"
+
+#: functions.php:532
+msgid "Next Post"
+msgstr "Следующий пост"
+
+#: functions.php:605
+#, php-format
+msgid ""
+"<span class=\"fn\">%s</span><span class=\"commenter_is_author\">Author</span>"
 msgstr ""
+"<span class=\"fn\">%s</span><span class=\"commenter_is_author\">Автор</span>"
+
+#: functions.php:607
+#, php-format
+msgid "<span class=\"fn\">%s</span>"
+msgstr "<span class=\"fn\">%s</span>"
+
+#: functions.php:613
+msgid "(Edit)"
+msgstr "(Правка)"
+
+#: functions.php:615
+msgid "Reply"
+msgstr "Ответить"
+
+#: functions.php:621
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: searchform.php:11
+msgid "Search for"
+msgstr "Поиск"
+
+#: searchform.php:12
+msgid "Search &#8230;"
+msgstr "Поиск &#8230;"
+
+#: comments.php:18
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Эта запись защищена паролем. Введите пароль для просмотра комментариев."
+
+#: comments.php:28
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s комментарий к записи &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s комментария к записи &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s комментариев к записи &ldquo;%2$s&rdquo;"
+
+#: comments.php:56
+msgid "Add a Comment"
+msgstr "Добавить новый комментарий"
+
+#: comments.php:58
+msgid "Add Comment"
+msgstr "Добавить комментарий"
+
+#: comments.php:63 comments.php:64
+msgid "Name"
+msgstr "Имя"
+
+#: comments.php:65 comments.php:66
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:67 comments.php:68
+msgid "Website"
+msgstr "Веб-сайт"
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска: %s"
+
+#: search.php:35 archive.php:41 index.php:35
+msgid "&#8249; Previous"
+msgstr "&#8249; Предыдущая"
+
+#: search.php:36 archive.php:42 index.php:36
+msgid "Next &#8250;"
+msgstr "Следующая &#8250;"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ой! Не удается найти эту страницу."
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Ничего не было найдено. Может быть попробовать одну из следующих ссылок или "
+"новый поиск?"
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "Наиболее популярные рубрики"
+
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Попробуйте посмотреть в архивах по месяцам. %1$s"
+
+#: header.php:38 header.php:65
+msgid "Add Menu"
+msgstr "Добавить меню"
+
+#: header.php:40 header.php:67
+msgid "Go to Appearance => Menus and assign a Menu to this location."
+msgstr "Go to Appearance => Menus and assign a Menu to this location."
+
+#: inc/customizer.php:20
+msgid "General Settings"
+msgstr "Общие настройки"
+
+#: inc/customizer.php:49
+msgid "Copyright Text"
+msgstr "Авторский текст"
+
+#: inc/customizer.php:72
+msgid "Logo Image"
+msgstr "Изображение логотипа"
+
+#: inc/customizer.php:82
+msgid "Archives Settings"
+msgstr "Настройки архивов"
+
+#: inc/customizer.php:149
+msgid "Archives Meta"
+msgstr "Archives Meta"
+
+#: inc/customizer.php:181
+msgid "Excerpt Length"
+msgstr "Длина отрывка (посты)"
+
+#: inc/customizer.php:192
+msgid "Article Settings"
+msgstr "Настройки для статей"
+
+#: inc/customizer.php:208
+msgid "Post Meta"
+msgstr "Мета данные записи"
+
+#: inc/customizer.php:241
+msgid "Related Posts Number"
+msgstr "Количество похожих записей"
+
+#: inc/customizer.php:259
+msgid "Related Posts Query"
+msgstr "Related Posts Query"
+
+#: inc/customizer.php:262
+msgid "Tags"
+msgstr "Метки"
+
+#: inc/customizer.php:263
+msgid "Categories"
+msgstr "Категории"
+
+#: inc/customizer.php:280
+msgid "Next/Prev Article"
+msgstr "Следующая/Предыдущая статья"
+
+#: inc/customizer.php:298
+msgid "Post Author Box"
+msgstr "Блок автора записи"
+
+#: inc/customizer.php:308
+msgid "Design & Layout"
+msgstr "Дизайн и Расположение"
+
+#: inc/customizer.php:325
+msgid "Sidebar Settings"
+msgstr "Настройки сайдбара"
+
+#: inc/customizer.php:348
+msgid "Color Scheme"
+msgstr "Цветовая схема"
+
+#: inc/customizer.php:374
+msgid "Background settings"
+msgstr "Настройки фона"
+
+#: inc/customizer.php:377
+msgid "Color"
+msgstr "Цвет"
+
+#: inc/customizer.php:378
+msgid "Pattern"
+msgstr "Pattern"
+
+#: inc/customizer.php:379
+msgid "Custom image"
+msgstr "Произвольное изображение"
+
+#: inc/customizer.php:398
+msgid "Background color"
+msgstr "Цвет фона"
+
+#: inc/customizer.php:418
+msgid "Background pattern"
+msgstr "Background pattern"
+
+#: inc/customizer.php:479
+msgid "Custom background image"
+msgstr "Пользовательское фоновое изображение"
+
+#: inc/customizer.php:496 inc/customizer.php:499 inc/customizer.php:646
+msgid "Repeat"
+msgstr "Повторение"
+
+#: inc/customizer.php:500 inc/customizer.php:647
+msgid "Repeat-x"
+msgstr "Повтор по X"
+
+#: inc/customizer.php:501 inc/customizer.php:648
+msgid "Repeat-y"
+msgstr "Повтор по Y"
+
+#: inc/customizer.php:502 inc/customizer.php:649
+msgid "No-repeat"
+msgstr "Без повторять"
+
+#: inc/customizer.php:517
+msgid "Attachment"
+msgstr "Вложение"
+
+#: inc/customizer.php:520 inc/customizer.php:662
+msgid "Scroll"
+msgstr "Scroll"
+
+#: inc/customizer.php:521 inc/customizer.php:663
+msgid "Fixed"
+msgstr "Фиксированный"
+
+#: inc/customizer.php:536
+msgid "Position"
+msgstr "Position"
+
+#: inc/customizer.php:539 inc/customizer.php:676
+msgid "Left top"
+msgstr "Слева сверху"
+
+#: inc/customizer.php:540 inc/customizer.php:677
+msgid "Left center"
+msgstr "Слева по центру"
+
+#: inc/customizer.php:541 inc/customizer.php:678
+msgid "Left bottom"
+msgstr "Слева снизу"
+
+#: inc/customizer.php:542 inc/customizer.php:679
+msgid "Right top"
+msgstr "Справа сверху"
+
+#: inc/customizer.php:543 inc/customizer.php:680
+msgid "Right center"
+msgstr "Справа по центру"
+
+#: inc/customizer.php:544 inc/customizer.php:681
+msgid "Right bottom"
+msgstr "Справа снизу"
+
+#: inc/customizer.php:545 inc/customizer.php:682
+msgid "Center top"
+msgstr "Центр Верх"
+
+#: inc/customizer.php:546 inc/customizer.php:683
+msgid "Center center"
+msgstr "По центру"
+
+#: inc/customizer.php:547 inc/customizer.php:684
+msgid "Center bottom"
+msgstr "По центру внизу"
+
+#: inc/customizer.php:563
+msgid "Custom CSS"
+msgstr "Вставьте здесь свой CSS"
+
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: inc/extras.php:78 template-parts/content-video.php:38
+msgid "Read more"
+msgstr "Читать далее"
+
+#: inc/template-tags.php:23
+msgid "year"
+msgstr "год"
+
+#: inc/template-tags.php:23
+msgid "years"
+msgstr "года(лет)"
+
+#: inc/template-tags.php:24
+msgid "month"
+msgstr "месяц"
+
+#: inc/template-tags.php:24
+msgid "months"
+msgstr "месяца(-ев)"
+
+#: inc/template-tags.php:25
+msgid "week"
+msgstr "неделя"
+
+#: inc/template-tags.php:25
+msgid "weeks"
+msgstr "недель"
+
+#: inc/template-tags.php:26
+msgid "day"
+msgstr "день"
+
+#: inc/template-tags.php:26
+msgid "days"
+msgstr "дней"
+
+#: inc/template-tags.php:27
+msgid "hour"
+msgstr "час"
+
+#: inc/template-tags.php:27
+msgid "hours"
+msgstr "часы"
+
+#: inc/template-tags.php:28
+msgid "minute"
+msgstr "минута"
+
+#: inc/template-tags.php:28
+msgid "minutes"
+msgstr "минуты"
+
+#: inc/template-tags.php:29
+msgid "second"
+msgstr "секунда"
+
+#: inc/template-tags.php:29 inc/template-tags.php:62
+msgid "seconds"
+msgstr "секунд"
+
+#: inc/template-tags.php:46
+msgid "sometime"
+msgstr "некоторое время"
+
+#: inc/template-tags.php:65
+msgid " ago"
+msgstr " назад"
+
+#: inc/template-tags.php:85
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr "%s"
+
+#: inc/template-tags.php:106
+#, php-format
+msgid ""
+"<span class=\"posted\">Posted on </span> <time class=\"entry-date\" "
+"title=\"%1$s\" datetime=\"%2$s\">%3$s</time> <span class=\"by-author\"> "
+"<span class=\"posted\"> by </span> <span class=\"author vcard\"><a "
+"class=\"url fn\" href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span>"
+"</span>"
+msgstr ""
+"<span class=\"posted\">Опубликовано </span> <time class=\"entry-date\" "
+"title=\"%1$s\" datetime=\"%2$s\">%3$s</time> <span class=\"by-author\"> "
+"<span class=\"posted\"> автором </span> <span class=\"author vcard\"><a "
+"class=\"url fn\" href=\"%4$s\" title=\"%5$s\" rel=\"author\">%6$s</a></span>"
+"</span>"
+
+#: inc/template-tags.php:111
+#, php-format
+msgid "View all posts by %s"
+msgstr "Просмотреть все посты от  %s"
+
+#: inc/template-tags.php:122
+#, php-format
+msgctxt "post author"
+msgid "%s"
+msgstr "%s"
+
+#: inc/template-tags.php:138 inc/template-tags.php:152
+#, php-format
+msgid "%1$s"
+msgstr "%1$s"
+
+#: inc/template-tags.php:150
+msgid ", "
+msgstr ", "
+
+#: inc/template-tags.php:182
+#, php-format
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Оставить комментарий<span class=\"screen-reader-text\"> на %s</span>"
+
+#: inc/template-tags.php:202
+#, php-format
+msgid "Category: %s"
+msgstr "Категория: %s"
+
+#: inc/template-tags.php:204
+#, php-format
+msgid "Tag: %s"
+msgstr "Метка: %s"
+
+#: inc/template-tags.php:206
+#, php-format
+msgid "Author: %s"
+msgstr "Автор: %s"
+
+#: inc/template-tags.php:208
+#, php-format
+msgid "Year: %s"
+msgstr "Год: %s"
+
+#: inc/template-tags.php:208
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags.php:210
+#, php-format
+msgid "Month: %s"
+msgstr "Месяц: %s"
+
+#: inc/template-tags.php:210
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags.php:212
+#, php-format
+msgid "Day: %s"
+msgstr "День: %s"
+
+#: inc/template-tags.php:212
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: inc/template-tags.php:215
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "В сторону"
+
+#: inc/template-tags.php:217
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Галереи"
+
+#: inc/template-tags.php:219
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Изображения"
+
+#: inc/template-tags.php:221
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Видео"
+
+#: inc/template-tags.php:223
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Цитата"
+
+#: inc/template-tags.php:225
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Ссылки"
+
+#: inc/template-tags.php:227
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Статусы"
+
+#: inc/template-tags.php:229
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Аудио"
+
+#: inc/template-tags.php:231
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Чат"
+
+#: inc/template-tags.php:234
+#, php-format
+msgid "Archives: %s"
+msgstr "Архивы: %s"
+
+#: inc/template-tags.php:238
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags.php:240
+msgid "Archives"
+msgstr "Архивы"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начните здесь</a>."
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"К сожалению, не нашлось ни одного совпадения. Пожалуйста, попробуйте "
+"изменить ключевые слова."
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Попробуйте поиск"
+
+#: template-parts/content-video.php:20 template-parts/content.php:20
+msgid "Edit"
+msgstr "Изменить"
+
+#: template-parts/content-video.php:24 template-parts/content.php:24
+msgid "Delete"
+msgstr "Удалить"
+
+#: template-parts/content.php:36
+#, php-format
+msgid "Read more %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Читать дальше %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/content-page.php:19 template-parts/content-single.php:21
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: functions/widget-socialicons.php:50
+msgid "Facebook URI"
+msgstr "Facebook URI"
+
+#: functions/widget-socialicons.php:54
+msgid "Twitter URI"
+msgstr "Twitter URI"
+
+#: functions/widget-socialicons.php:58
+msgid "Google+ URI"
+msgstr "Google+ URI"
+
+#: functions/widget-socialicons.php:62
+msgid "YouTube URI"
+msgstr "YouTube URI"
+
+#: functions/widget-socialicons.php:66
+msgid "RSS URI"
+msgstr "RSS URI"
+
+#: functions/widget-socialicons.php:70
+msgid "Pinterest URI"
+msgstr "Pinterest URI"
+
+#: functions/widget-socialicons.php:74
+msgid "Linkedin URI"
+msgstr "Linkedin URI"
+
+#: functions/widget-socialicons.php:78
+msgid "StumbleUpon URI"
+msgstr "StumbleUpon URI"
+
+#: functions/widget-socialicons.php:82
+msgid "Reddit URI"
+msgstr "Reddit URI"
+
+#: functions/widget-socialicons.php:86
+msgid "Tumblr URI"
+msgstr "Tumblr URI"
+
+#: functions/widget-socialicons.php:90
+msgid "Instagram URI"
+msgstr "Instagram URI"
+
+#: functions/widget-socialicons.php:94
+msgid "Vimeo URI"
+msgstr "Vimeo URI"
+
+#: functions/widget-socialicons.php:98
+msgid "FourSquare URI"
+msgstr "FourSquare URI"
+
+#: functions/widget-socialicons.php:102
+msgid "Soundcloud URI"
+msgstr "Soundcloud URI"
+
+#: functions/widget-socialicons.php:106
+msgid "GitHub URI"
+msgstr "GitHub URI"
+
+#: functions/widget-socialicons.php:110
+msgid "Flickr URI"
+msgstr "Flickr URI"
+
+#: functions/widget-socialicons.php:114
+msgid "Skype URI"
+msgstr "Skype URI"
+
+#: functions/widget-socialicons.php:119
+msgid "Behance URI"
+msgstr "Behance URI"
+
+#: functions/widget-socialicons.php:123
+msgid "Dribbble URI"
+msgstr "Dribbble URI"
+
+#: functions/widget-socialicons.php:127
+msgid "Dropbox URI"
+msgstr "Dropbox URI"
+
+#: functions/widget-socialicons.php:131
+msgid "Email URI"
+msgstr "Email URI"
+
+#: functions/widget-socialicons.php:138
+msgid "Show social profile icons."
+msgstr "Show social profile icons."
+
+#: functions/widget-socialicons.php:146
+msgid "ModRealistic: Social Icons"
+msgstr "ModRealistic: Social Icons"
+
+#: functions/widget-socialicons.php:156 functions/widget-recentposts.php:34
+#: functions/widget-popularposts.php:36 functions/widget-login.php:44
+msgid "Title:"
+msgstr "Заглавие"
+
+#: functions/widget-socialicons.php:158
+msgid "Open links in a new tab?"
+msgstr "Открывать ссылки в новой вкладке?"
+
+#: functions/widget-recentposts.php:15
+msgid "ModRealistic: Recent Posts"
+msgstr "ModRealistic: Последние сообщения"
+
+#: functions/widget-recentposts.php:16
+msgid "Display the most recent posts from all categories."
+msgstr "Отображение последних записей"
+
+#: functions/widget-recentposts.php:27 functions/widget-recentposts.php:85
+msgid "Recent Posts"
+msgstr "Свежие записи"
+
+#: functions/widget-recentposts.php:39 functions/widget-popularposts.php:47
+msgid "Number of Posts to show"
+msgstr "Кол-во статей для отображения:"
+
+#: functions/widget-recentposts.php:46 functions/widget-popularposts.php:54
+msgid "Show Thumbnails"
+msgstr "Показать миниатюры"
+
+#: functions/widget-recentposts.php:53 functions/widget-popularposts.php:61
+msgid "Show post date"
+msgstr "Отобразить дату публикации"
+
+#: functions/widget-popularposts.php:15
+msgid "ModRealistic: Popular Posts"
+msgstr "ModRealistic: Popular Posts"
+
+#: functions/widget-popularposts.php:16
+msgid "Displays most Popular Posts with Thumbnail."
+msgstr "Отображает наиболее популярные записи с миниатюрами"
+
+#: functions/widget-popularposts.php:28
+msgid "Popular Posts"
+msgstr "Популярные статьи"
+
+#: functions/widget-popularposts.php:41
+msgid "Popular limit (days), 0 for No-limit"
+msgstr "Popular limit (days), 0 for No-limit"
+
+#: functions/widget-login.php:16
+msgid "ModRealistic: Login Widget"
+msgstr "ModRealistic: Login Widget"
+
+#: functions/widget-login.php:17
+msgid "Display a login/register form on the sidebar."
+msgstr "Отображать форму входа или регистрации в сайдбаре"
+
+#: functions/widget-login.php:34 functions/widget-login.php:127
+msgid "Login"
+msgstr "Логин"
+
+#: functions/widget-login.php:51
+msgid "Show Avatar"
+msgstr "Показать аватар"
+
+#: functions/widget-login.php:58
+msgid "Show Logged in User name"
+msgstr "Show Logged in User name"
+
+#: functions/widget-login.php:65
+msgid "Show Dashboard Link"
+msgstr "Показать панель управления"
+
+#: functions/widget-login.php:72
+msgid "Show Profile Link"
+msgstr "Показать ссылку профиля"
+
+#: functions/widget-login.php:79
+msgid "Show Remember me"
+msgstr "Показать Запомнить меня"
+
+#: functions/widget-login.php:86
+msgid "Show Register Link"
+msgstr "Показывать ссылку регистрации"
+
+#: functions/widget-login.php:93
+msgid "Show Forgotten Password Link"
+msgstr "Показать ссылку Забыл пароль"
+
+#: functions/widget-login.php:132 functions/widget-login.php:132
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: functions/widget-login.php:150
+msgid "Enter both Username and Password"
+msgstr "Пожалуйста введите имя пользователя и пароль"
+
+#: functions/widget-login.php:153
+msgid "Username is not registered"
+msgstr "Имя пользователя не зарегистрировано"
+
+#: functions/widget-login.php:156
+msgid "Incorrect Password"
+msgstr "Неверный пароль"
+
+#: functions/widget-login.php:174
+msgid "Logged in as "
+msgstr "Вы вошли как "
+
+#: functions/widget-login.php:180
+msgid "Dashboard"
+msgstr "Панель управления"
+
+#: functions/widget-login.php:183
+msgid "Profile"
+msgstr "Профиль"
+
+#: functions/widget-login.php:185
+msgid "Logout"
+msgstr "Выйти"
+
+#: functions/widget-login.php:196
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: functions/widget-login.php:197
+msgid "Password"
+msgstr "Пароль"
+
+#: functions/widget-login.php:203
+msgid "Register"
+msgstr "Зарегестрироваться"
+
+#: functions/widget-login.php:205
+msgid "Forgot Password?"
+msgstr "Забыли пароль?"
+
+#: functions/widget-login.php:238
+msgid "<strong>ERROR</strong>: Invalid username or incorrect password."
+msgstr "<strong>ОШИБКА:</strong> Неверное имя пользователя или пароль."
+
+#. Theme Name of the plugin/theme
+msgid "ModRealistic"
+msgstr "ModRealistic"

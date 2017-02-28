@@ -23,7 +23,12 @@
 <!-- You can start editing here. -->
 <?php if ( have_comments() ) : ?>
 <div id="comments">
-	<h3 class="total-comments"><?php comments_number(__('No Comments','modrealistic'), __('One Comment','modrealistic'),  __('% Comments','modrealistic') );?></h3>
+	<h3 class="total-comments">
+		<?php
+			printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'modrealistic' ),
+				number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+		?>
+	</h3>
 	<ol class="commentlist clearfix">
 		<div class="navigation">
 			<div class="alignleft"><?php previous_comments_link() ?></div>
