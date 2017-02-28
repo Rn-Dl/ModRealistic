@@ -1378,3 +1378,6 @@ embed, iframe, object {
 .author a {
 	font-weight: bold;
 }
+.site-main .page {
+    padding: 10px 30px 10px 10px;
+}
