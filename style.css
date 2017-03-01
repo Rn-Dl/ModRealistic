@@ -919,7 +919,7 @@ input, textarea {
 }
 .single .post-info {
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 }
 
 .single .comment-counter {
