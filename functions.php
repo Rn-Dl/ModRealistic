@@ -640,7 +640,7 @@
 						echo $footer_left; ?>
 					</div>
 					<div class="right">
-						<?php _e( 'ModRealistic theme by <a href="https://pogromist.io">Pogromist</a>', 'modrealistic' );?>
+						<?php _e( 'ModRealistic theme by <a href="https://enginerd.io">EngiNerd</a>', 'modrealistic' );?>
 					</div>
 				</div>
 			<?php

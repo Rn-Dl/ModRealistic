@@ -27,8 +27,8 @@ msgid "Written By:"
 msgstr "Написано:"
 
 #: functions.php:643
-msgid "ModRealistic theme by <a href=\"https://pogromist.io\">Pogromist</a>"
-msgstr "ModRealistic theme by <a href=\"https://pogromist.io\">Pogromist</a>"
+msgid "ModRealistic theme by <a href=\"https://enginerd.io\">EngiNerd</a>"
+msgstr "ModRealistic theme by <a href=\"https://enginerd.io\">EngiNerd</a>"
 
 #. Name of the template
 msgid "Full Width"
@@ -63,8 +63,8 @@ msgid "Vladimir L"
 msgstr "Vladimir L"
 
 #. Author URI of the theme
-msgid "https://pogromist.io"
-msgstr "https://pogromist.io"
+msgid "https://enginerd.io"
+msgstr "https://enginerd.io"
 
 #: functions.php:26
 msgid "Primary Menu"
